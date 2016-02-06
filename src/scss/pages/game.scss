@@ -1,0 +1,24 @@
+.game {
+
+    font-size: 20px;
+
+    .header {
+        padding: 2em;
+    }
+
+    .game-header {
+        text-align: center;
+    }
+
+    .main-image img, .side-image img {
+        width: 100%;
+    }
+
+    .images {
+        margin-top: 3em;
+    }
+
+    .main-copy {
+        margin-top: 4em;
+    }
+}

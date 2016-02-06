@@ -1,5 +1,4 @@
 @import "animations.scss";
-@import "mixins.scss";
 @import "logos.scss";
 
 $bold-color: red;
@@ -7,6 +6,7 @@ $normal-color: #4A4A4A;
 
 @import "pages/index.scss";
 @import "pages/about.scss";
+@import "pages/game.scss";
 
 
 body {
@@ -42,8 +42,6 @@ a {
     background: none;
 
     animation: bounceDown 1000ms linear both;
-    padding-left: 5px;
-    padding-right: 5px;
 
     &:active, &:visited {
         color: white;
@@ -54,6 +52,9 @@ a {
         animation: bounceUp 1000ms linear both;
         color: $bold-color;
         text-decoration: none;
+
+        padding-left: 5px;
+        padding-right: 5px;
 
     }
 

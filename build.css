@@ -87,6 +87,32 @@
       -o-background-size: 225px 147px;
       background-size: 225px 147px; } }
 
+.tts-logo {
+  background-image: url("img/TTSLogo.png");
+  width: 401px;
+  height: 34px;
+  display: inline-block; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .tts-logo {
+      background-image: url("img/TTSLogo@2x.png");
+      -webkit-background-size: 401px 34px;
+      -moz-background-size: 401px 34px;
+      -o-background-size: 401px 34px;
+      background-size: 401px 34px; } }
+
+.top-left-corner-logo {
+  background-image: url("img/TopLeftCornerLogo.png");
+  width: 113px;
+  height: 74px;
+  display: inline-block; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .top-left-corner-logo {
+      background-image: url("img/TopLeftCornerLogo@2x.png");
+      -webkit-background-size: 113px 74px;
+      -moz-background-size: 113px 74px;
+      -o-background-size: 113px 74px;
+      background-size: 113px 74px; } }
+
 .footer-logo {
   margin-top: 4em;
   background-image: url("img/FooterLogo.png");
@@ -154,6 +180,19 @@ body.about {
     padding-left: 3em;
     padding-right: 3em; }
 
+.game {
+  font-size: 20px; }
+  .game .header {
+    padding: 2em; }
+  .game .game-header {
+    text-align: center; }
+  .game .main-image img, .game .side-image img {
+    width: 100%; }
+  .game .images {
+    margin-top: 3em; }
+  .game .main-copy {
+    margin-top: 4em; }
+
 body {
   text-decoration: none;
   width: 100%;
@@ -175,16 +214,16 @@ a {
   color: white;
   display: inline-block;
   background: none;
-  animation: bounceDown 1000ms linear both;
-  padding-left: 5px;
-  padding-right: 5px; }
+  animation: bounceDown 1000ms linear both; }
   a:active, a:visited {
     color: white; }
   a:hover {
     background: white;
     animation: bounceUp 1000ms linear both;
     color: red;
-    text-decoration: none; }
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px; }
   a.game-image {
     padding: 0px; }
 
