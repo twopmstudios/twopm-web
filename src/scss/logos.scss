@@ -1,0 +1,32 @@
+.large-logo {
+    margin-top: 4em;
+    margin-left: 2em;
+    @include background-image-retina("img/LargeGameLogo", "png", 351px, 553px);
+    width: 351px;
+    height: 553px;
+}
+
+.about-logo {
+    @include background-image-retina("img/AboutLogo", "png", 225px, 147px);
+    width: 225px;
+    height: 147px;
+    display: inline-block;
+}
+
+.footer-logo {
+    margin-top: 4em;
+    @include background-image-retina("img/FooterLogo", "png", 95px, 179px);
+    width: 95px;
+    height: 179px;
+
+    display: inline-block;
+}
+
+.footer-logo.dark {
+    margin-top: 4em;
+    @include background-image-retina("img/FooterLogoDark", "png", 95px, 179px);
+    width: 95px;
+    height: 179px;
+
+    display: inline-block;
+}

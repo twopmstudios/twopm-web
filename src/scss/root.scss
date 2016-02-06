@@ -1,0 +1,95 @@
+@import "animations.scss";
+@import "mixins.scss";
+@import "logos.scss";
+
+$bold-color: red;
+$normal-color: #4A4A4A;
+
+@import "pages/index.scss";
+@import "pages/about.scss";
+
+
+body {
+    text-decoration: none;
+
+    width: 100%;
+
+    font-size: 16px;
+
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+
+    padding-bottom: 3em;
+}
+
+.inverted a {
+    color: $normal-color;
+
+    &:active, &:visited {
+        color: $normal-color;
+    }
+
+    &:hover {
+        color: white;
+        background: $normal-color;
+    }
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+    display: inline-block;
+    background: none;
+
+    animation: bounceDown 1000ms linear both;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    &:active, &:visited {
+        color: white;
+    }
+
+    &:hover {
+        background: white;
+        animation: bounceUp 1000ms linear both;
+        color: $bold-color;
+        text-decoration: none;
+
+    }
+
+    &.game-image {
+        padding: 0px;
+    }
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.footer {
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 1em;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.bold-label, .label-content {
+    font-size: 0.8em;
+}
+
+.bold-label {
+    font-weight: 400;
+}
+
+.label-content {
+    margin-bottom: 3em;
+}

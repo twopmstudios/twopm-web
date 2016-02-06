@@ -1,0 +1,42 @@
+body.index {
+    background: $bold-color;
+    color: white;
+
+    .header {
+        margin-top: 3em;
+    }
+
+    .leader {
+        font-size: 2em;
+    }
+
+    img.game-image {
+        width: 284px;
+        height: 160px;
+    }
+
+    .captions {
+        margin-top: 1em;
+        width: 284px;
+        text-align: center;
+
+        .game-title {
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+
+        .game-caption {
+
+        }
+    }
+
+    .games {
+        margin-top: 12em;
+    }
+
+    .contact-options {
+        margin-top: 6em;
+        text-align: center;
+        font-size: 1.4em;
+    }
+}

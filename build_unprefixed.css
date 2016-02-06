@@ -1,0 +1,144 @@
+body {
+  background: red;
+  text-decoration: none;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  color: white;
+  padding-bottom: 3em; }
+
+a {
+  text-decoration: underline;
+  color: white;
+  display: inline-block;
+  background: none;
+  animation: bounceDown 1000ms linear both;
+  padding-left: 5px;
+  padding-right: 5px; }
+  a:active, a:visited {
+    color: white; }
+  a:hover {
+    background: white;
+    animation: bounceUp 1000ms linear both;
+    color: red;
+    text-decoration: none; }
+
+/* Generated with Bounce.js. Edit at http://goo.gl/EgLjpn */
+@keyframes bounceDown {
+  0% {
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4% {
+    transform: matrix3d(1.114, 0, 0, 0, 0, 1.114, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  7.91% {
+    transform: matrix3d(1.022, 0, 0, 0, 0, 1.022, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  11.91% {
+    transform: matrix3d(0.962, 0, 0, 0, 0, 0.962, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  15.82% {
+    transform: matrix3d(0.945, 0, 0, 0, 0, 0.945, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  20.42% {
+    transform: matrix3d(0.961, 0, 0, 0, 0, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  24.92% {
+    transform: matrix3d(0.988, 0, 0, 0, 0, 0.988, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.53% {
+    transform: matrix3d(1.008, 0, 0, 0, 0, 1.008, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  34.03% {
+    transform: matrix3d(1.014, 0, 0, 0, 0, 1.014, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  43.14% {
+    transform: matrix3d(1.003, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  52.15% {
+    transform: matrix3d(0.997, 0, 0, 0, 0, 0.997, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  70.37% {
+    transform: matrix3d(1.001, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  88.59% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+
+/* Generated with Bounce.js. Edit at http://goo.gl/7QEtf6 */
+@keyframes bounceUp {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4% {
+    transform: matrix3d(1.086, 0, 0, 0, 0, 1.086, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  7.91% {
+    transform: matrix3d(1.178, 0, 0, 0, 0, 1.178, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  11.91% {
+    transform: matrix3d(1.238, 0, 0, 0, 0, 1.238, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  15.82% {
+    transform: matrix3d(1.255, 0, 0, 0, 0, 1.255, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  20.42% {
+    transform: matrix3d(1.239, 0, 0, 0, 0, 1.239, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  24.92% {
+    transform: matrix3d(1.212, 0, 0, 0, 0, 1.212, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.53% {
+    transform: matrix3d(1.192, 0, 0, 0, 0, 1.192, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  34.03% {
+    transform: matrix3d(1.186, 0, 0, 0, 0, 1.186, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  43.14% {
+    transform: matrix3d(1.197, 0, 0, 0, 0, 1.197, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  52.15% {
+    transform: matrix3d(1.203, 0, 0, 0, 0, 1.203, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  70.37% {
+    transform: matrix3d(1.199, 0, 0, 0, 0, 1.199, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  88.59% {
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% {
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+
+.leader {
+  font-size: 2em; }
+
+.large-logo {
+  margin-top: 4em;
+  margin-left: 2em;
+  background-image: url("img/LargeGameLogo.png");
+  width: 351px;
+  height: 553px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .large-logo {
+      background-image: url("img/LargeGameLogo@2x.png");
+      -webkit-background-size: 351px 553px;
+      -moz-background-size: 351px 553px;
+      -o-background-size: 351px 553px;
+      background-size: 351px 553px; } }
+
+.game-image {
+  width: 284px;
+  height: 160px; }
+
+.captions {
+  margin-top: 1em;
+  width: 284px;
+  text-align: center; }
+  .captions .game-title {
+    font-weight: 400;
+    font-size: 1.2em; }
+
+.games {
+  margin-top: 12em; }
+
+.contact-options {
+  margin-top: 6em;
+  text-align: center;
+  font-size: 1.4em; }
+
+.footer {
+  text-align: center; }
+
+.footer-logo {
+  margin-top: 4em;
+  background-image: url("img/FooterLogo.png");
+  width: 95px;
+  height: 179px;
+  display: inline-block; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .footer-logo {
+      background-image: url("img/FooterLogo@2x.png");
+      -webkit-background-size: 95px 179px;
+      -moz-background-size: 95px 179px;
+      -o-background-size: 95px 179px;
+      background-size: 95px 179px; } }
+
+.copyright {
+  margin-top: 1em; }
