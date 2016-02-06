@@ -1,29 +1,3 @@
-body {
-  background: red;
-  text-decoration: none;
-  width: 100%;
-  font-size: 16px;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 300;
-  color: white;
-  padding-bottom: 3em; }
-
-a {
-  text-decoration: underline;
-  color: white;
-  display: inline-block;
-  background: none;
-  animation: bounceDown 1000ms linear both;
-  padding-left: 5px;
-  padding-right: 5px; }
-  a:active, a:visited {
-    color: white; }
-  a:hover {
-    background: white;
-    animation: bounceUp 1000ms linear both;
-    color: red;
-    text-decoration: none; }
-
 /* Generated with Bounce.js. Edit at http://goo.gl/EgLjpn */
 @keyframes bounceDown {
   0% {
@@ -86,9 +60,6 @@ a {
   100% {
     transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
 
-.leader {
-  font-size: 2em; }
-
 .large-logo {
   margin-top: 4em;
   margin-left: 2em;
@@ -103,28 +74,44 @@ a {
       -o-background-size: 351px 553px;
       background-size: 351px 553px; } }
 
-.game-image {
-  width: 284px;
-  height: 160px; }
+.about-logo {
+  background-image: url("img/AboutLogo.png");
+  width: 225px;
+  height: 147px;
+  display: inline-block; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .about-logo {
+      background-image: url("img/AboutLogo@2x.png");
+      -webkit-background-size: 225px 147px;
+      -moz-background-size: 225px 147px;
+      -o-background-size: 225px 147px;
+      background-size: 225px 147px; } }
 
-.captions {
-  margin-top: 1em;
-  width: 284px;
-  text-align: center; }
-  .captions .game-title {
-    font-weight: 400;
-    font-size: 1.2em; }
+.tts-logo {
+  background-image: url("img/TTSLogo.png");
+  width: 401px;
+  height: 34px;
+  display: inline-block; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .tts-logo {
+      background-image: url("img/TTSLogo@2x.png");
+      -webkit-background-size: 401px 34px;
+      -moz-background-size: 401px 34px;
+      -o-background-size: 401px 34px;
+      background-size: 401px 34px; } }
 
-.games {
-  margin-top: 12em; }
-
-.contact-options {
-  margin-top: 6em;
-  text-align: center;
-  font-size: 1.4em; }
-
-.footer {
-  text-align: center; }
+.top-left-corner-logo {
+  background-image: url("img/TopLeftCornerLogo.png");
+  width: 113px;
+  height: 74px;
+  display: inline-block; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .top-left-corner-logo {
+      background-image: url("img/TopLeftCornerLogo@2x.png");
+      -webkit-background-size: 113px 74px;
+      -moz-background-size: 113px 74px;
+      -o-background-size: 113px 74px;
+      background-size: 113px 74px; } }
 
 .footer-logo {
   margin-top: 4em;
@@ -140,5 +127,126 @@ a {
       -o-background-size: 95px 179px;
       background-size: 95px 179px; } }
 
+.footer-logo.dark {
+  margin-top: 4em;
+  background-image: url("img/FooterLogoDark.png");
+  width: 95px;
+  height: 179px;
+  display: inline-block; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .footer-logo.dark {
+      background-image: url("img/FooterLogoDark@2x.png");
+      -webkit-background-size: 95px 179px;
+      -moz-background-size: 95px 179px;
+      -o-background-size: 95px 179px;
+      background-size: 95px 179px; } }
+
+body.index {
+  background: red;
+  color: white; }
+  body.index .header {
+    margin-top: 3em; }
+  body.index .leader {
+    font-size: 2em; }
+  body.index img.game-image {
+    width: 284px;
+    height: 160px; }
+  body.index .captions {
+    margin-top: 1em;
+    width: 284px;
+    text-align: center; }
+    body.index .captions .game-title {
+      font-weight: 400;
+      font-size: 1.2em; }
+  body.index .games {
+    margin-top: 12em; }
+  body.index .contact-options {
+    margin-top: 6em;
+    text-align: center;
+    font-size: 1.4em; }
+
+body.about {
+  background: white;
+  color: #4A4A4A; }
+  body.about .about-logo-col {
+    text-align: right; }
+  body.about .header {
+    margin-top: 4em; }
+  body.about .people {
+    margin-top: 5em; }
+  body.about .about-copy {
+    font-size: 1.6em;
+    margin-top: 2.5em;
+    padding-left: 3em;
+    padding-right: 3em; }
+
+.game {
+  font-size: 20px; }
+  .game .header {
+    padding: 2em; }
+  .game .game-header {
+    text-align: center; }
+  .game .main-image img, .game .side-image img {
+    width: 100%; }
+  .game .images {
+    margin-top: 3em; }
+  .game .main-copy {
+    margin-top: 4em; }
+
+body {
+  text-decoration: none;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  padding-bottom: 3em; }
+
+.inverted a {
+  color: #4A4A4A; }
+  .inverted a:active, .inverted a:visited {
+    color: #4A4A4A; }
+  .inverted a:hover {
+    color: white;
+    background: #4A4A4A; }
+
+a {
+  text-decoration: underline;
+  color: white;
+  display: inline-block;
+  background: none;
+  animation: bounceDown 1000ms linear both; }
+  a:active, a:visited {
+    color: white; }
+  a:hover {
+    background: white;
+    animation: bounceUp 1000ms linear both;
+    color: red;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px; }
+  a.game-image {
+    padding: 0px; }
+
+p {
+  margin-bottom: 1em; }
+
+.footer {
+  text-align: center; }
+
 .copyright {
   margin-top: 1em; }
+
+.left-align {
+  text-align: left; }
+
+.right-align {
+  text-align: right; }
+
+.bold-label, .label-content {
+  font-size: 0.8em; }
+
+.bold-label {
+  font-weight: 400; }
+
+.label-content {
+  margin-bottom: 3em; }
