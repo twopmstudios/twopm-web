@@ -1,12 +1,14 @@
+include ../components/footer.jade
+include ../components/infoLabel.jade
+
 doctype html
 html(lang="en")
   head
     title Two PM - About
     
-    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
-    link(rel="stylesheet" href="http://brick.a.ssl.fastly.net/Fira+Sans:300,400")
+    include ../favicon.jade
+    include ../styles.jade
     
-    link(rel="stylesheet" type="text/css" href="build.css")
   body.about.inverted
     
     div.container
@@ -26,40 +28,36 @@ html(lang="en")
 
         div.row.people
             div.col-md-6.right-align
-                div.bold-label Ben Follington
-                div.label-content Technical "Director"
+            
+                +infoLabel("Ben Follington", 'Technical "Director"')
                 
                 p Ben is the guy who does a lot of the programming and art for projects.
 
                 p He made this website.
                 
-                div.bold-label Twitter
-                div.label-content <a href="https://twitter.com/vivavolt">@vivavolt</a>
+                +infoLabel("Twitter")
+                    a(href="https://twitter.com/vivavolt") @vivavolt
                 
-                div.bold-label Favourite Snack
-                div.label-content <em>"Anything I can take a BYTE out of HAHAHAHAHAHAHAHA"</em>
+                +infoLabel("Favourite Snack")
+                    em "Make the game"
                 
-                div.bold-label But Really Though...?
-                div.label-content <em>"HAHAHAHAHA"</em>
+                +infoLabel("But Really Though...?")
+                    em "HAHAHAHAHA"
             
             div.col-md-6.left-align
-                div.bold-label Ricky James
-                div.label-content Creative "Director"
+            
+                +infoLabel("Ben Follington", 'Creative "Director"')
                 
                 p Ricky is the guy who does a lot of the writing and the design for projects.
 
                 p He did not make this website, but he approved of it.
                 
-                div.bold-label Twitter
-                div.label-content <a href="https://twitter.com/iammonshushu">@iammonshushu</a>
+                +infoLabel("Twitter")
+                    a(href="https://twitter.com/iammonshushu") @iammonshushu
                 
-                div.bold-label Star Sign
-                div.label-content Libra, with the eyebrows of a Leo
+                +infoLabel("Star Sign", 'Libra, with the eyebrows of a Leo')
                 
-                div.bold-label Catch Phrase
-                div.label-content <em>"Make the game"</em>
+                +infoLabel("Catch Phrase")
+                    em "Make the game"
 
-        div.row
-            footer.footer
-                div.footer-logo.dark
-                //- p.copyright &copy; 2016
+        +footer(true)

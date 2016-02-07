@@ -1,0 +1,7 @@
+mixin infoLabel(label, content)
+    div.bold-label= label
+    if block
+        div.label-content
+            block
+    else 
+        div.label-content= content

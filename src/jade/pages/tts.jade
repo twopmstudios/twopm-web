@@ -1,12 +1,14 @@
+include ../components/footer.jade
+include ../components/infoLabel.jade
+
 doctype html
 html(lang="en")
   head
     title The Thin Silence
     
-    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
-    link(rel="stylesheet" href="http://brick.a.ssl.fastly.net/Fira+Sans:300,400")
+    include ../favicon.jade
+    include ../styles.jade
     
-    link(rel="stylesheet" type="text/css" href="build.css")
   body.game.inverted
   
     div.header
@@ -45,24 +47,22 @@ html(lang="en")
                 
             div.col-md-4
                 div.main-copy
-                    div.bold-label Presskit
-                    div.label-content Download the presskit <a href="">here</a>.
+                    +infoLabel("Presskit")
+                        span Download the presskit <a href="">here</a>.
                     
-                    div.bold-label Links
-                    div.label-content Vote for The Thin Silence on <a href="">Steam Greenlight</a>!
-                    div.label-content Read the devlog on <a href="">TIGSource</a>.
+                    +infoLabel("Links")
+                        div 
+                            span Vote for The Thin Silence on <a href="">Steam Greenlight</a>!
+                            br
+                            span Read the devlog on <a href="">TIGSource</a>.
                     
-                    div.bold-label Production Started
-                    div.label-content 5th March 2015
+                    +infoLabel("Production Started", "5th March 2015")
                     
-                    div.bold-label Contact
-                    div.label-content 
+                    
+                    +infoLabel("Contact")
                         div 
                             <a href="#"><script type="text/javascript">document.write('hey&#x00040;' + 'twopm&#x0002E;studio')</script></a><br>
                             <a href="https://twitter.com/vivavolt">@vivavolt</a>
                             <a href="https://twitter.com/iammonshushu">@iammonshushu</a>
     
-        div.row
-            footer.footer
-                div.footer-logo.dark
-                //- p.copyright &copy; 2016
+        +footer(true)
