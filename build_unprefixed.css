@@ -142,10 +142,12 @@
       background-size: 95px 179px; } }
 
 body.index {
-  background: red;
+  background: #0088FF;
   color: white; }
   body.index .header {
     margin-top: 3em; }
+  body.index .links-section {
+    margin-top: 2em; }
   body.index .leader {
     font-size: 2em; }
   body.index img.game-image {
@@ -220,7 +222,7 @@ a {
   a:hover {
     background: white;
     animation: bounceUp 1000ms linear both;
-    color: red;
+    color: #0088FF;
     text-decoration: none;
     padding-left: 5px;
     padding-right: 5px;
@@ -252,3 +254,8 @@ p {
 
 .label-content {
   margin-bottom: 3em; }
+
+ul.horizontal li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px; }

@@ -1,7 +1,14 @@
 @import "animations.scss";
 @import "logos.scss";
 
-$bold-color: red;
+// 0088FF
+// 00D676
+// 004CD6
+// 6D00D6
+// D60054
+// D63B00
+// 4A4A4A
+$bold-color: #0088FF;
 $normal-color: #4A4A4A;
 
 @import "pages/index.scss";
@@ -95,4 +102,10 @@ p {
 
 .label-content {
     margin-bottom: 3em;
+}
+
+ul.horizontal li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
 }
