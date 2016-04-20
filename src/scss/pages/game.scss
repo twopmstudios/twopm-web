@@ -1,6 +1,6 @@
 .game {
 
-    font-size: 20px;
+    font-size: 16px;
 
     .header {
         padding: 2em;
@@ -8,6 +8,7 @@
 
     .game-header {
         text-align: center;
+        margin-bottom: 3em;
     }
 
     .main-image img, .side-image img {
@@ -20,5 +21,11 @@
 
     .main-copy {
         margin-top: 4em;
+    }
+
+    .no-padding {
+        .col-xs-4 {
+            padding: 0;
+        }
     }
 }

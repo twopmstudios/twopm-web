@@ -13,27 +13,32 @@ html(lang="en")
   
     div.header
         div.top-left-corner-logo
+        div
+            a(href="index") &#8592; Take Me Home
     
     div.container
         
         div.row.game-header
             div.col-xs-12
                 div.tts-logo
-                
-    div.images
-        div.col-xs-3
+        
+    div#images.no-padding
+        div.col-xs-4
             div.side-image
-                img(src="img/TTS.png")
+                img(src="img/screens/a4_4.png" alt="The Thin Silence")
             div.side-image
-                img(src="img/TTS.png")
-        div.col-xs-6
-            div.main-image
-                img(src="img/TTS.png")
-        div.col-xs-3
+                img(src="img/screens/a4_2.png" alt="The Thin Silence")
+        div.col-xs-4
             div.side-image
-                img(src="img/TTS.png")
+                img(src="img/screens/a4_1.png" alt="The Thin Silence")
             div.side-image
-                img(src="img/TTS.png")
+                img(src="img/screens/a_shavi.png" alt="The Thin Silence")
+        div.col-xs-4
+            div.side-image
+                img(src="img/screens/a2_1.png" alt="The Thin Silence")
+            div.side-image
+                img(src="img/screens/a1_2.png" alt="The Thin Silence")
+            
     
     div.container
         
@@ -43,19 +48,26 @@ html(lang="en")
             div.col-xs-12
                 div.main-copy
                     div.center-align
-                        span Vote for The Thin Silence on <a href="">Steam Greenlight</a>!
+                        span Vote for The Thin Silence on <a class="greenlight" href="">Steam Greenlight</a>!
                     
                     div.center-align
                         include ../mailchimp.html
     
         div.row
             div.col-md-6.col-md-offset-1
-                div.main-copy.right-align
-                    div.bold-label About
-                    br
-                    
-                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin accumsan, diam tincidunt viverra scelerisque, neque lectus ultrices ante, at hendrerit lorem velit sit amet massa. Nam ac neque quis ante rhoncus convallis ut id nisl. Integer facilisis, libero vitae feugiat tincidunt, massa nisi tincidunt nibh, non dictum nisi augue in turpis. Mauris et odio a orci sollicitudin rutrum sed eu dui. Sed rhoncus dui at cursus blandit. Pellentesque condimentum est eget dui eleifend, ut pharetra quam euismod. Vivamus commodo aliquam suscipit. Proin dapibus est orci, a venenatis mauris condimentum quis. Ut porta, ex at imperdiet dictum, ligula sapien facilisis ante, sed dignissim nulla elit feugiat ex. Vivamus egestas lacinia ultrices. Mauris eget cursus sem.
-                
+                div.main-copy.justify-align
+                    h2.bold-label About
+
+                    p Have you ever felt like giving up? When every task feels like scaling a mountain, every day feels impossible.  
+
+                    p The Thin Silence is an cinematic narrative adventure game with both puzzle and exploration elements, told through the introspection and recollection of Ezra Westmark. Find creative ways to make your way out of the darkness, uncovering the journey that lead him there and the hope that leads him home.
+
+                    p But how can the future be bright when it feels so dark? How can you give meaning to emptiness? And how can you have hope when everything is hopeless? Join Ezra on his journey back to confront his past, overcoming challenges on the way and, hopefully, discovering who he really is. 
+
+                    p Inspired by point-and-click adventure games, TTS allows you to collect and combine important items along your journey. These items and their combinations can be used to manipulate the environment in many varied and unexpected ways. Obstacles are not intended as a test of your intelligence. Rather, you are facing the same challenges that Ezra faces and thinking creatively to overcome them. Do not expect to solve the same puzzle over and over again.
+
+                    p An average playthrough may take anywhere from 2 to 10 hours - the world is rich and varied, designed to be savoured. Please take the time to experience it - this game is not intended to be completed quickly or an excessive number of times. It is intended (like The Beginner&#39;s Guide, Gone Home, Firewatch etc.) to be a conversation, a 21st century recurrence of an ancient pastime. Sit and stare into the fire, and we&#39;ll tell you a story.
+
             div.col-md-4
                 div.main-copy
                     +infoLabel("Presskit")
@@ -63,12 +75,11 @@ html(lang="en")
                     
                     +infoLabel("Links")
                         div 
-                            span Vote for The Thin Silence on <a href="">Steam Greenlight</a>!
+                            span Vote for The Thin Silence on <a class="greenlight" href="">Steam Greenlight</a>!
                             br
-                            span Read the devlog on <a href="">TIGSource</a>.
+                            span Read the devlog on <a href="https://forums.tigsource.com/index.php?topic=31994">TIGSource</a>.
                     
-                    +infoLabel("Production Started", "5th March 2015")
-                    
+                    +infoLabel("Production Started", "2013")
                     
                     +infoLabel("Contact")
                         div 
@@ -79,3 +90,12 @@ html(lang="en")
         +footer(false)
 
         include ../ga.html
+        
+        link(href="scripts/viewerjs/viewer.css" rel="stylesheet")
+        script(src="scripts/viewerjs/viewer.js")
+        
+        script(type="text/javascript").
+            var options = {
+                transition: false
+            };
+            var viewer = new Viewer(document.getElementById('images'), options);

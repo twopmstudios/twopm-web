@@ -10,6 +10,7 @@
 // 4A4A4A
 $bold-color: #0088FF;
 $normal-color: #4A4A4A;
+$greenlight-color: #799905;
 
 @import "pages/index.scss";
 @import "pages/about.scss";
@@ -39,6 +40,19 @@ body {
     &:hover {
         color: white;
         background: $normal-color;
+    }
+}
+
+a.greenlight {
+    color: $greenlight-color;
+
+    &:active, &:visited {
+        color: $greenlight-color;
+    }
+
+    &:hover {
+        color: white;
+        background: $greenlight-color;
     }
 }
 
@@ -92,12 +106,16 @@ p {
     text-align: center;
 }
 
+.justify-align {
+    text-align: justify;
+}
+
 .right-align {
     text-align: right;
 }
 
 .bold-label, .label-content {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .bold-label {
