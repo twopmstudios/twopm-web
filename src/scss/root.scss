@@ -15,6 +15,7 @@ $greenlight-color: #799905;
 @import "pages/index.scss";
 @import "pages/about.scss";
 @import "pages/game.scss";
+@import "pages/presskit.scss";
 
 
 body {
@@ -28,6 +29,10 @@ body {
     font-weight: 300;
 
     padding-bottom: 3em;
+}
+
+.clickable {
+    cursor: pointer;
 }
 
 .inverted a {

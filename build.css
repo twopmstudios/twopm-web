@@ -198,6 +198,31 @@ body.about {
   .game .no-padding .col-xs-4 {
     padding: 0; }
 
+.presskit {
+  font-size: 16px; }
+  .presskit .header {
+    padding: 2em; }
+  .presskit .game-header {
+    text-align: center;
+    margin-bottom: 3em; }
+  .presskit .main-image img, .presskit .side-image img {
+    width: 100%; }
+  .presskit .brand-image {
+    text-align: center; }
+    .presskit .brand-image img {
+      max-width: 75%;
+      padding: 2em; }
+      .presskit .brand-image img.restrict-height {
+        max-height: 320px; }
+  .presskit img.dark-bg {
+    background-color: #4A4A4A; }
+  .presskit .images {
+    margin-top: 3em; }
+  .presskit .main-copy {
+    margin-top: 4em; }
+  .presskit .row.padding-bottom {
+    padding-bottom: 2em; }
+
 body {
   text-decoration: none;
   width: 100%;
@@ -205,6 +230,9 @@ body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 300;
   padding-bottom: 3em; }
+
+.clickable {
+  cursor: pointer; }
 
 .inverted a {
   color: #4A4A4A; }

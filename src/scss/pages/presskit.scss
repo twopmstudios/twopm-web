@@ -1,0 +1,45 @@
+.presskit {
+    font-size: 16px;
+
+    .header {
+        padding: 2em;
+    }
+
+    .game-header {
+        text-align: center;
+        margin-bottom: 3em;
+    }
+
+    .main-image img, .side-image img {
+        width: 100%;
+    }
+
+    .brand-image {
+        text-align: center;
+
+        img {
+            max-width: 75%;
+            padding: 2em;
+
+            &.restrict-height {
+                max-height: 320px;
+            }
+        }
+    }
+
+    img.dark-bg {
+        background-color: $normal-color;
+    }
+
+    .images {
+        margin-top: 3em;
+    }
+
+    .main-copy {
+        margin-top: 4em;
+    }
+
+    .row.padding-bottom {
+        padding-bottom: 2em;
+    }
+}
