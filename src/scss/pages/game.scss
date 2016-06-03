@@ -28,4 +28,33 @@
             padding: 0;
         }
     }
+
+    .trailer {
+        width: 560px;
+        margin: 0 auto;
+        margin-top: 3em;
+    }
+
+    .greenlight-message {
+        background: $greenlight-color;
+        width: 100%;
+        height: 3em;
+        padding: 1em;
+        text-align: center;
+
+        color: white;
+    }
+
+    a.greenlight-link {
+        color: white;
+
+        &:active, &:visited {
+            color: white;
+        }
+
+        &:hover {
+            color: $greenlight-color;
+            background: white;
+        }
+    }
 }
