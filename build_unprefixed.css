@@ -208,6 +208,13 @@ body.about {
     padding: 1em;
     text-align: center;
     color: white; }
+  .game a.greenlight-link {
+    color: white; }
+    .game a.greenlight-link:active, .game a.greenlight-link:visited {
+      color: white; }
+    .game a.greenlight-link:hover {
+      color: #799905;
+      background: white; }
 
 .presskit {
   font-size: 16px; }
