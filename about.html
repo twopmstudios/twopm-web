@@ -35,7 +35,7 @@
           <div class="about-copy">
             <p>
                
-              <a href="index">Two PM</a> is a game design collective who have been making games together for 13 years and for some reason haven't given up.
+              <a href="index">Two PM</a> is a game design collective who have been making games together for <span id="yearCount">_</span> years and for some reason haven't given up.
             </p>
             <p>It's about making things we love but not taking everything too seriously. We've always had a lot of other stuff to worry about other than making games, so we're usually making them in our free time.</p>
             <p>Making games for us is like the feeling of kicking back with an afternoon tea, coffee, beer (or other). We love it.</p>
@@ -88,6 +88,24 @@
 
 </script>
 
+      <script>
+        function calculateYears() {
+            var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+            var oneYear = 365.25;
+            var startDate = new Date(2005, 08, 23);
+        
+            var diffDays = Math.abs(((new Date()).getTime() - startDate.getTime())/(oneDay));
+            var years = diffDays / oneYear;
+            
+            var el = document.querySelector("#yearCount")
+            el.textContent = years.toFixed(8);
+        }
+        
+        (function() {
+            calculateYears();
+            setInterval(calculateYears, 1000);
+        })();
+      </script>
     </div>
   </body>
 </html>
