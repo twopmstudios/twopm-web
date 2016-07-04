@@ -33,10 +33,7 @@
         </div>
         <div class="col-md-8">
           <div class="about-copy">
-            <p>
-               
-              <a href="index">Two PM</a> is a game design collective who have been making games together for <span id="yearCount">_</span> years and for some reason haven't given up.
-            </p>
+            <p><a href="index">Two PM</a> is a game design collective who have been making games together for <span id="yearCount">_</span> years and for some reason haven't given up.</p>
             <p>It's about making things we love but not taking everything too seriously. We've always had a lot of other stuff to worry about other than making games, so we're usually making them in our free time.</p>
             <p>Making games for us is like the feeling of kicking back with an afternoon tea, coffee, beer (or other). We love it.</p>
           </div>
@@ -96,7 +93,7 @@
         
             var diffDays = Math.abs(((new Date()).getTime() - startDate.getTime())/(oneDay));
             var years = diffDays / oneYear;
-            
+        
             var el = document.querySelector("#yearCount")
             el.textContent = years.toFixed(8);
         }

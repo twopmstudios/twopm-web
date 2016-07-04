@@ -5,24 +5,24 @@ doctype html
 html(lang="en")
   head
     title Two PM - About
-    
+
     include ../favicon.jade
     include ../styles.jade
-    
+
   body.about.inverted
-    
+
     div.container
-        
+
         h1 About
         div
             a(href="index") &#8592; Take Me Home
-        
+
         div.row.header
             div.col-md-4.about-logo-col
                 div.about-logo
             div.col-md-8
                 div.about-copy
-                    p 
+                    p
                         | <a href="index">Two PM</a> is a game design collective who have been making games together for <span id="yearCount">_</span> years and for some reason haven't given up.
 
                     p It's about making things we love but not taking everything too seriously. We've always had a lot of other stuff to worry about other than making games, so we're usually making them in our free time.
@@ -31,57 +31,39 @@ html(lang="en")
 
         div.row.people
             div.col-md-6.right-align
-            
+
                 +infoLabel("Ben Follington", 'Technical "Director"')
-                
+
                 p Ben is the guy who does a lot of the programming and art for projects.
 
                 p He made this website.
-                
+
                 +infoLabel("Twitter")
                     a(href="https://twitter.com/vivavolt") @vivavolt
-                
+
                 +infoLabel("Favourite Snack")
                     em "Anything I can take a BYTE out of HAHAHAHAHAHAHAHA"
-                
+
                 +infoLabel("But Really Though...?")
                     em "HAHAHAHAHA"
-            
+
             div.col-md-6.left-align
-            
+
                 +infoLabel("Ricky James", 'Creative "Director"')
-                
+
                 p Ricky is the guy who does a lot of the writing and the design for projects.
 
                 p He did not make this website, but he approved of it.
-                
+
                 +infoLabel("Twitter")
                     a(href="https://twitter.com/iammonshushu") @iammonshushu
-                
+
                 +infoLabel("Star Sign", 'Libra, with the eyebrows of a Leo')
-                
+
                 +infoLabel("Catch Phrase")
                     em "Make the game"
 
         +footer(false)
 
         include ../ga.html
-        
-        script.
-            
-            function calculateYears() {
-                var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
-                var oneYear = 365.25;
-                var startDate = new Date(2005, 08, 23);
-
-                var diffDays = Math.abs(((new Date()).getTime() - startDate.getTime())/(oneDay));
-                var years = diffDays / oneYear;
-                
-                var el = document.querySelector("#yearCount")
-                el.textContent = years.toFixed(8);
-            }
-        
-            (function() {
-                calculateYears();
-                setInterval(calculateYears, 1000);
-            })();
+        include ../year-counter.jade

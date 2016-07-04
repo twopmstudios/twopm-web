@@ -40,7 +40,7 @@
         <div class="col-sm-4">
           <h2>Facts</h2>
           <div class="bold-label">Studio</div>
-          <div class="label-content"><span>The Thin Silence (TTS) is being developed by <a href="index">Two PM</a>, based in Brisbane, Australia. </span>
+          <div class="label-content"><span>The Thin Silence (TTS) is being developed by <a href="index">Two PM</a>, based in Brisbane, Australia.</span>
           </div>
           <div class="bold-label">Production Started</div>
           <div class="label-content">2013</div>
@@ -57,24 +57,24 @@
           </div>
           <div class="bold-label">Links</div>
           <div class="label-content">
-            <div> <span>Vote for The Thin Silence on <a class="greenlight" href="">Steam Greenlight</a>!</span><br><span>Read the devlog on <a href="https://forums.tigsource.com/index.php?topic=31994">TIGSource</a></span></div>
+            <div><span>Vote for The Thin Silence on <a class="greenlight" href="">Steam Greenlight</a>!</span><br><span>Read the devlog on <a href="https://forums.tigsource.com/index.php?topic=31994">TIGSource</a></span></div>
           </div>
         </div>
         <div class="col-sm-8">
           <h2>Game Description</h2>
           <div class="justify-align">
-            <p>Have you ever felt like giving up? When every task feels like scaling a mountain, every day feels impossible.  </p>
+            <p>Have you ever felt like giving up? When every task feels like scaling a mountain, every day feels impossible.</p>
             <p>The Thin Silence is an cinematic narrative adventure game with both puzzle and exploration elements, told through the introspection and recollection of Ezra Westmark. Find creative ways to make your way out of the darkness, uncovering the journey that lead him there and the hope that leads him home.</p>
-            <p>But how can the future be bright when it feels so dark? How can you give meaning to emptiness? And how can you have hope when everything is hopeless? Join Ezra on his journey back to confront his past, overcoming challenges on the way and, hopefully, discovering who he really is. </p>
+            <p>But how can the future be bright when it feels so dark? How can you give meaning to emptiness? And how can you have hope when everything is hopeless? Join Ezra on his journey back to confront his past, overcoming challenges on the way and, hopefully, discovering who he really is.</p>
             <p>Inspired by point-and-click adventure games, TTS allows you to collect and combine important items along your journey. These items and their combinations can be used to manipulate the environment in many varied and unexpected ways. Obstacles are not intended as a test of your intelligence. Rather, you are facing the same challenges that Ezra faces and thinking creatively to overcome them. Do not expect to solve the same puzzle over and over again.</p>
             <p>An average playthrough may take anywhere from 2 to 10 hours - the world is rich and varied, designed to be savoured. Please take the time to experience it - this game is not intended to be completed quickly or an excessive number of times. It is intended (like The Beginner&#39;s Guide, Gone Home, Firewatch etc.) to be a conversation, a 21st century recurrence of an ancient pastime. Sit and stare into the fire, and we&#39;ll tell you a story.</p>
           </div>
         </div>
       </div>
       <h2>Game & Studio History</h2>
-      <p>The Thin Silence (TTS) is being developed by Ben Follington and Ricky James, two best buds from Brisbane, Australia. We&#39;ve been working on games together for more than 13 years and for some reason we haven&#39;t stopped yet. In the past we’ve always been very mechanically focused in our game design and TTS was born our of our desire to challenge ourselves in a new way.</p>
+      <p>The Thin Silence (TTS) is being developed by Ben Follington and Ricky James, two best buds from Brisbane, Australia. We&#39;ve been working on games together for <span id="yearCount">_</span> years and for some reason we haven&#39;t stopped yet. In the past we&#39;ve always been very mechanically focused in our game design and TTS was born our of our desire to challenge ourselves in a new way.</p>
       <p>In 2012, we decided we wanted to make a serious game. This would be a longer and more intensive project than anything we had done before. The game actually began with far more of a focus on exploration and item crafting, but has shifted over time. We both have had experiences with loneliness and isolation, as we believe most people do. TTS gave a chance to talk about and explore these almost universal feelings, that it seems no one ever mentions. TTS is a game with puzzles to solve and challenges to overcome, but to a certain extent the experience is about you sitting back and experiencing the world.</p>
-      <p>Generally, Ben is responsible for the programming and art asset production while Ricky is responsible for the game design, level design and writing. </p>
+      <p>Generally, Ben is responsible for the programming and art asset production while Ricky is responsible for the game design, level design and writing.</p>
       <p>You can read a little more about us <a href="about">here</a>.</p>
       <h2>Contact Details</h2>
       <div class="bold-label">Email</div>
@@ -208,6 +208,24 @@
 
 </script>
 
+      <script>
+        function calculateYears() {
+            var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+            var oneYear = 365.25;
+            var startDate = new Date(2005, 08, 23);
+        
+            var diffDays = Math.abs(((new Date()).getTime() - startDate.getTime())/(oneDay));
+            var years = diffDays / oneYear;
+        
+            var el = document.querySelector("#yearCount")
+            el.textContent = years.toFixed(8);
+        }
+        
+        (function() {
+            calculateYears();
+            setInterval(calculateYears, 1000);
+        })();
+      </script>
       <link href="scripts/viewerjs/viewer.css" rel="stylesheet">
       <script src="scripts/viewerjs/viewer.js"></script>
       <script type="text/javascript">
