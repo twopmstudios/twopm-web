@@ -328,6 +328,10 @@ body.about {
       padding: 2em; }
       .presskit .brand-image img.restrict-height {
         max-height: 320px; }
+  .presskit .trailer {
+    width: 560px;
+    margin: 0 auto;
+    margin-top: 3em; }
   .presskit img.dark-bg {
     background-color: #4A4A4A; }
   .presskit .images {
