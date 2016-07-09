@@ -151,15 +151,22 @@ body.index {
   body.index .leader {
     font-size: 2em; }
   body.index img.game-image {
-    width: 284px;
-    height: 160px; }
+    width: 100%; }
   body.index .captions {
     margin-top: 1em;
-    width: 284px;
+    width: 100%;
     text-align: center; }
     body.index .captions .game-title {
       font-weight: 400;
       font-size: 1.2em; }
+  body.index .game {
+    margin-bottom: 2em; }
+  body.index .game.small {
+    float: left; }
+    body.index .game.small img.game-image {
+      width: 100%; }
+    body.index .game.small .captions {
+      width: 100%; }
   body.index .games {
     margin-top: 12em; }
   body.index .contact-options {

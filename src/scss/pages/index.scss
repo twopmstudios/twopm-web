@@ -15,13 +15,12 @@ body.index {
     }
 
     img.game-image {
-        width: 284px;
-        height: 160px;
+        width: 100%;
     }
 
     .captions {
         margin-top: 1em;
-        width: 284px;
+        width: 100%;
         text-align: center;
 
         .game-title {
@@ -31,6 +30,23 @@ body.index {
 
         .game-caption {
 
+        }
+    }
+
+    .game {
+        margin-bottom: 2em;
+    }
+
+    .game.small {
+
+        float: left;
+
+        img.game-image {
+            width: 100%;
+        }
+
+        .captions {
+            width: 100%;
         }
     }
 

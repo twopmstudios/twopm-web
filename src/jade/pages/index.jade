@@ -1,4 +1,5 @@
 include ../components/game.jade
+include ../components/smallGame.jade
 include ../components/footer.jade
 
 doctype html
@@ -37,6 +38,19 @@ html(lang="en")
                 div.games
                     
                     +game("The Thin Silence", "Our first major release", "img/TTS.png", "the-thin-silence")
+                    
+                    div.row 
+                        +smallGame("It's Hard To Be A Cube", "A super hard, made-in-one-week game.", "img/IHTBAC.png", "https://twopm.itch.io/its-hard-to-be-a-cube")
+                    
+                        +smallGame("Nightmerica", "A wave based shooter with randomly generated guns.", "img/USN.png", "https://itunes.apple.com/us/app/nightmerica-usn/id596231696?mt=8")
+                    
+                    div.row 
+                        +smallGame("Unchain My Heart", "A puzzle game about makin' chainz.", "img/UnchainMyHeart.png", "https://itunes.apple.com/au/app/unchain-my-heart/id578858339?mt=8")
+                    
+                        +smallGame("EverEternal WinterWorld 2", "An almost finished sequel to a bizarre Christmas adventure.", "img/EEWW2.png", "https://twopm.itch.io/evereternal-winterworld-2")
+                    
+                    div.row 
+                        +smallGame("EverEternal WinterWorld", "A bizarre Christmas adventure.", "img/EEWW.png", "https://twopm.itch.io/evereternal-winterworld")
         
         div.row
             div.col-xs-12
