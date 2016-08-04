@@ -18,6 +18,18 @@ mixin screenshotRow(one, two)
         div.col-xs-6
             div.side-image
                 img.clickable(src=two alt="The Thin Silence")
+                
+mixin gifRow(one, two, three)
+    div.row.padding-bottom
+        div.col-xs-4
+            div.gif-image
+                img.clickable(src=one alt="The Thin Silence")
+        div.col-xs-4
+            div.gif-image
+                img.clickable(src=two alt="The Thin Silence")
+        div.col-xs-4
+            div.gif-image
+                img.clickable(src=three alt="The Thin Silence")
 
 doctype html
 html(lang="en")
@@ -103,11 +115,21 @@ html(lang="en")
             <a href="https://twitter.com/iammonshushu">@iammonshushu</a> (Ricky)
 
         h2 Videos & Gifs
+        a(href="img/gifs/gifs.zip") Download all gifs as a .zip
         
         div.row
             div.col-xs-12
                 div.trailer 
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/jWjOAPiLBkg" frameborder="0" allowfullscreen></iframe>
+                
+        div#gifs
+            +gifRow("img/gifs/barn.gif", "img/gifs/breathe.gif", "img/gifs/climb.gif")
+            +gifRow("img/gifs/get-item.gif", "img/gifs/kick.gif", "img/gifs/pull-bridge.gif")
+            +gifRow("img/gifs/relax.gif", "img/gifs/run.gif", "img/gifs/secret.gif")
+            +gifRow("img/gifs/sitting.gif", "img/gifs/tie-down.gif", "img/gifs/tent.gif")
+            +gifRow("img/gifs/basket.gif", "img/gifs/bridge.gif", "img/gifs/fire.gif")
+            +gifRow("img/gifs/office.gif", "img/gifs/reception.gif", "img/gifs/row.gif")
+            +gifRow("img/gifs/sad.gif",  "img/gifs/shrine.gif", "img/gifs/tree.gif")
 
         h2 Hi-Res Screenshots
         a(href="img/screens/screens.zip") Download all screenshots as a .zip
@@ -151,3 +173,4 @@ html(lang="en")
                 transition: false
             };
             var viewer = new Viewer(document.getElementById('images'), options);
+            var gifViewer = new Viewer(document.getElementById('gifs'), options);

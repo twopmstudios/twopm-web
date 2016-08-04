@@ -225,6 +225,8 @@ body.about {
 
 .presskit {
   font-size: 16px; }
+  .presskit #gifs {
+    margin-top: 2em; }
   .presskit .header {
     padding: 2em; }
   .presskit .game-header {
