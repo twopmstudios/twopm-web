@@ -347,8 +347,9 @@ body.about {
     margin-top: 3em; }
   .presskit .main-copy {
     margin-top: 4em; }
-  .presskit .row.padding-bottom {
-    padding-bottom: 2em; }
+
+.row.padding-bottom {
+  padding-bottom: 2em; }
 
 body {
   text-decoration: none;

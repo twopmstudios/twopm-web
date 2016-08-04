@@ -17,6 +17,9 @@ $greenlight-color: #799905;
 @import "pages/game.scss";
 @import "pages/presskit.scss";
 
+.row.padding-bottom {
+    padding-bottom: 2em;
+}
 
 body {
     text-decoration: none;
