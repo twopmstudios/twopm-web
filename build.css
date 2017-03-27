@@ -297,7 +297,8 @@ body.about {
   .game .images {
     margin-top: 3em; }
   .game .main-copy {
-    margin-top: 4em; }
+    margin-top: 2em;
+    margin-top: 5em; }
   .game .no-padding .col-xs-4 {
     padding: 0; }
   .game .trailer {
