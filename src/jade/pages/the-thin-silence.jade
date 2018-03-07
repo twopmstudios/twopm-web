@@ -40,19 +40,25 @@ html(lang="en")
     div#images.no-padding
         div.col-xs-4
             div.side-image
-                img.clickable(src="img/screens/a4_4.png" alt="The Thin Silence")
+                img.clickable(src="img/screens/steam/a1_3.png" alt="The Thin Silence")
             div.side-image
-                img.clickable(src="img/screens/a4_2.png" alt="The Thin Silence")
+                img.clickable(src="img/screens/steam/a1_12.png" alt="The Thin Silence")
+            div.side-image
+                img.clickable(src="img/screens/steam/a1_15.png" alt="The Thin Silence")
         div.col-xs-4
             div.side-image
-                img.clickable(src="img/screens/a4_1.png" alt="The Thin Silence")
+                img.clickable(src="img/screens/steam/a2_7.png" alt="The Thin Silence")
             div.side-image
-                img.clickable(src="img/screens/a_shavi.png" alt="The Thin Silence")
+                img.clickable(src="img/screens/steam/a2_25.png" alt="The Thin Silence")
+            div.side-image
+                img.clickable(src="img/screens/steam/a3_17.png" alt="The Thin Silence")
         div.col-xs-4
             div.side-image
-                img.clickable(src="img/screens/a2_1.png" alt="The Thin Silence")
+                img.clickable(src="img/screens/steam/a3_18.png" alt="The Thin Silence")
             div.side-image
-                img.clickable(src="img/screens/a1_2.png" alt="The Thin Silence")
+                img.clickable(src="img/screens/steam/a3_19.png" alt="The Thin Silence")
+            div.side-image
+                img.clickable(src="img/screens/steam/a4_27.png" alt="The Thin Silence")
             
     
     div.container
@@ -65,28 +71,41 @@ html(lang="en")
                     <iframe width="960" height="540" src="https://www.youtube.com/embed/jWjOAPiLBkg" frameborder="0" allowfullscreen></iframe>
     
         div.row
-            div.col-xs-12
-                div.main-copy
-                    //- div.center-align
-                    //-     span View The Thin Silence on <a class="greenlight" href="http://steamcommunity.com/sharedfiles/filedetails/?id=719208897">Steam Greenlight</a>!
+            div.col-xs-12.center
+                <iframe src="http://store.steampowered.com/widget/314630/" frameborder="0" width="640" height="190"></iframe>
+        div.row
+            div.col-xs-12.center
+                <iframe frameborder="0" src="https://itch.io/embed/224116" width="640" height="190"></iframe>
+
+
                     
-                    div.center-align
-                        include ../mailchimp.html
     
         div.row
             div.col-md-6.col-md-offset-1
                 div.main-copy.justify-align
                     h2.bold-label About
 
-                    p Have you ever felt like giving up? When every task feels like scaling a mountain, every day feels impossible.  
+                    h3 Meet Ezra Westmark
+                    p The Thin Silence is a narrative adventure game told through the introspection and recollection of Ezra Westmark. Inspired by games such as Limbo and Knytt Stories, follow the journey of Ezra from his self-imposed exile to forgiveness and hope.
 
-                    p The Thin Silence is an cinematic narrative adventure game with both puzzle and exploration elements, told through the introspection and recollection of Ezra Westmark. Find creative ways to make your way out of the darkness, uncovering the journey that lead him there and the hope that leads him home.
+                    p The Thin Silence explores depression, self-doubt, struggles, and trials. Amongst the darkness, the game features that sound, that thin silence, which calls to us in our darkest hours. That sound we can’t hear or describe which somehow gives us the strength to try again and push through obstacles previously insurmountable. It’s not a game about success. 
 
-                    p But how can the future be bright when it feels so dark? How can you give meaning to emptiness? And how can you have hope when everything is hopeless? Join Ezra on his journey back to confront his past, overcoming challenges on the way and, hopefully, discovering who he really is. 
+                    p It’s a game of enduring your worst moment and facing the next one. Walk with Ezra out of the darkness, uncovering the journey that led him there and the hope that leads him home.
 
-                    p Inspired by point-and-click adventure games, TTS allows you to collect and combine important items along your journey. These items and their combinations can be used to manipulate the environment in many varied and unexpected ways. Obstacles are not intended as a test of your intelligence. Rather, you are facing the same challenges that Ezra faces and thinking creatively to overcome them. Do not expect to solve the same puzzle over and over again.
+                    h3 Experience The Story
+                    ul
+                        li Enjoy 4-5 hours of unique and varied challenges driven by a fresh item-vs-environment interaction mechanic.
+                        li Experience breathtaking vistas &amp; quiet contemplation
+                        li Uncover Ezra’s crisis and his journey back, finding answers and a little bit of yourself along the way
+                        li Featuring a moving original score by LightFrequency
+                        li Over 40 unique in-game documents
+                        li Mostly believable hacking sequences
+                        li A wolf and a deer (not like, at the same time though)
 
-                    p An average playthrough may take anywhere from 2 to 10 hours - the world is rich and varied, designed to be savoured. Please take the time to experience it - this game is not intended to be completed quickly or an excessive number of times. It is intended (like The Beginner&#39;s Guide, Gone Home, Firewatch etc.) to be a conversation, a 21st century recurrence of an ancient pastime. Sit and stare into the fire, and we&#39;ll tell you a story.
+                    h3 Proud Affiliate Of
+                    div.center
+                        a.no-background(href="https://checkpoint.org.au/" title="Checkpoint - Connecting Mental Health with Games")
+                            img.checkpoint-image(src="img/checkpoint.png" alt="Checkpoint - Connecting Mental Health with Games")
 
             div.col-md-4
                 div.main-copy
@@ -95,8 +114,6 @@ html(lang="en")
                     
                     +infoLabel("Links")
                         div 
-                            span View The Thin Silence on <a class="greenlight" href="http://steamcommunity.com/sharedfiles/filedetails/?id=719208897">Steam Greenlight</a>!
-                            br
                             span Read the devlog on <a href="https://forums.tigsource.com/index.php?topic=31994">TIGSource</a>.
                     
                     +infoLabel("Production Started", "2013")

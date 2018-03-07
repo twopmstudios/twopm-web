@@ -94,6 +94,14 @@ a {
     }
 }
 
+a.no-background {
+    background: none;
+
+    &:hover {
+        background: none;
+    }
+}
+
 p {
     margin-bottom: 1em;
 }
@@ -138,4 +146,8 @@ ul.horizontal li {
     display: inline;
     list-style-type: none;
     margin-right: 20px;
+}
+
+.center {
+    text-align: center;
 }

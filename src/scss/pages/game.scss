@@ -15,6 +15,10 @@
         width: 100%;
     }
 
+    .side-image img {
+        border: 1px solid white;
+    }
+
     .images {
         margin-top: 3em;
     }
@@ -57,5 +61,12 @@
             color: $greenlight-color;
             background: white;
         }
+    }
+
+    .checkpoint-image {
+        width: 256px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 2em;
     }
 }
