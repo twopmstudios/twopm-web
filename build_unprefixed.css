@@ -198,10 +198,13 @@ body.about {
     margin-bottom: 3em; }
   .game .main-image img, .game .side-image img {
     width: 100%; }
+  .game .side-image img {
+    border: 1px solid white; }
   .game .images {
     margin-top: 3em; }
   .game .main-copy {
-    margin-top: 4em; }
+    margin-top: 2em;
+    margin-bottom: 5em; }
   .game .no-padding .col-xs-4 {
     padding: 0; }
   .game .trailer {
@@ -222,6 +225,10 @@ body.about {
     .game a.greenlight-link:hover {
       color: #799905;
       background: white; }
+  .game .checkpoint-image {
+    width: 128px;
+    display: block;
+    margin: 0 auto; }
 
 .presskit {
   font-size: 16px; }
