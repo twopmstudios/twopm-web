@@ -1,14 +1,14 @@
-include ../components/game.jade
-include ../components/smallGame.jade
-include ../components/footer.jade
+include ../components/game.pug
+include ../components/smallGame.pug
+include ../components/footer.pug
 
 doctype html
 html(lang="en")
   head
     title Two PM
     
-    include ../favicon.jade
-    include ../styles.jade
+    include ../favicon.pug
+    include ../styles.pug
     
   body.index
     
@@ -50,7 +50,7 @@ html(lang="en")
         div.row
             div.col-xs-12
                 div.contact-options
-                    p You can email us at <a href="#"><script type="text/javascript">document.write('hey&#x00040;' + 'twopm&#x0002E;studio')</script></a>
+                    p You can email us at <a href="#"><script type="text/javascript">document.write('mail.twopm&#x00040;' + 'gmail&#x0002E;com')</script></a>
                     p Or you can tweet us <a href="https://twitter.com/vivavolt">@vivavolt</a> and <a href="https://twitter.com/iammonshushu">@iammonshushu</a>
 
         +footer(true)

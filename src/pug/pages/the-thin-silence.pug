@@ -1,5 +1,5 @@
-include ../components/footer.jade
-include ../components/infoLabel.jade
+include ../components/footer.pug
+include ../components/infoLabel.pug
 
 mixin gifRow(one, two, three)
     div.row.padding-bottom
@@ -18,8 +18,8 @@ html(lang="en")
   head
     title The Thin Silence
     
-    include ../favicon.jade
-    include ../styles.jade
+    include ../favicon.pug
+    include ../styles.pug
     
   body.game.inverted
   
@@ -123,7 +123,7 @@ html(lang="en")
                     
                     +infoLabel("Contact")
                         div 
-                            <a href="#"><script type="text/javascript">document.write('hey&#x00040;' + 'twopm&#x0002E;studio')</script></a><br>
+                            <a href="#"><script type="text/javascript">document.write('mail.twopm&#x00040;' + 'gmail&#x0002E;com')</script></a><br>
                             <a href="https://twitter.com/vivavolt">@vivavolt</a>
                             <a href="https://twitter.com/iammonshushu">@iammonshushu</a>
                             

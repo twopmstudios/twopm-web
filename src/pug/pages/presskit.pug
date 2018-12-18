@@ -1,5 +1,5 @@
-include ../components/footer.jade
-include ../components/infoLabel.jade
+include ../components/footer.pug
+include ../components/infoLabel.pug
 
 mixin brandImage(src, dark, restrictHeight)
     div.row.padding-bottom
@@ -36,8 +36,8 @@ html(lang="en")
   head
     title The Thin Silence & Two PM Presskit
 
-    include ../favicon.jade
-    include ../styles.jade
+    include ../favicon.pug
+    include ../styles.pug
 
   body.presskit.inverted
 
@@ -122,7 +122,7 @@ html(lang="en")
         h2 Contact Details
 
         +infoLabel("Email")
-            <a href="#"><script type="text/javascript">document.write('hey&#x00040;' + 'twopm&#x0002E;studio')</script></a><br>
+            <a href="#"><script type="text/javascript">document.write('mail.twopm&#x00040;' + 'gmail&#x0002E;com')</script></a><br>
 
         +infoLabel("Twitter")
             <a href="https://twitter.com/vivavolt">@vivavolt</a> (Ben)
@@ -182,7 +182,7 @@ html(lang="en")
         +footer(false)
 
         include ../ga.html
-        include ../year-counter.jade
+        include ../year-counter.pug
 
         link(href="scripts/viewerjs/viewer.css" rel="stylesheet")
         script(src="scripts/viewerjs/viewer.js")
