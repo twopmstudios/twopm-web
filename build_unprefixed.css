@@ -169,6 +169,8 @@ body.index {
       width: 100%; }
   body.index .games {
     margin-top: 12em; }
+  body.index .more-games {
+    text-align: center; }
   body.index .contact-options {
     margin-top: 6em;
     text-align: center;
@@ -265,6 +267,29 @@ body.about {
     margin: 0 auto;
     margin-top: 2em; }
 
+.game-info-page .main {
+  width: 800px;
+  margin: 0 auto; }
+
+.game-info-page a {
+  text-decoration: underline; }
+
+.game-info-page .center {
+  text-align: center; }
+
+.game-info-page ul.images li {
+  display: inline-block;
+  margin-bottom: 2em; }
+  .game-info-page ul.images li img {
+    width: 128px; }
+    .game-info-page ul.images li img.big {
+      margin-right: 92px;
+      width: 256px; }
+    .game-info-page ul.images li img.full {
+      width: 100%; }
+  .game-info-page ul.images li .caption {
+    display: block; }
+
 .row.padding-bottom {
   padding-bottom: 2em; }
 
@@ -303,7 +328,7 @@ a {
   animation: bounceDown 1000ms linear both; }
   a:active, a:visited {
     color: white; }
-  a:hover {
+  a:not(.no-hover):hover {
     background: white;
     animation: bounceUp 1000ms linear both;
     color: #0088FF;
