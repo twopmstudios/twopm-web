@@ -1,0 +1,38 @@
+.game-info-page {
+  .main {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  ul.images {
+    li {
+      display: inline-block;
+      margin-bottom: 2em;
+
+      img {
+        width: 128px;
+
+        &.big {
+          margin-right: 92px;
+          width: 256px;
+        }
+
+        &.full {
+          width: 100%;
+        }
+      }
+
+      .caption {
+        display: block;
+      }
+    }
+  }
+}

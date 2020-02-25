@@ -16,6 +16,7 @@ $greenlight-color: #799905;
 @import "pages/about.scss";
 @import "pages/game.scss";
 @import "pages/presskit.scss";
+@import "pages/gameinfo.scss";
 
 .row.padding-bottom {
     padding-bottom: 2em;
@@ -76,7 +77,7 @@ a {
         color: white;
     }
 
-    &:hover {
+    &:not(.no-hover):hover {
         background: white;
         animation: bounceUp 1000ms linear both;
         color: $bold-color;

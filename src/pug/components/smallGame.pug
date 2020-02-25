@@ -1,6 +1,7 @@
 mixin smallGame(title, caption, imageUrl, link)
     div.game.small.col-xs-6
-        img.game-image(src=imageUrl)
+        a.no-hover(href=link, title=title)
+            img.game-image(src=imageUrl, alt=title)
         div.captions
-            a.game-title(href=link)= title
+            a.game-title(href=link, title=title)= title
             div.game-caption= caption

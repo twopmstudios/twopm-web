@@ -5,7 +5,7 @@ include ../components/footer.pug
 doctype html
 html(lang="en")
   head
-    title Two PM
+    title TwoPM Studios
     
     include ../favicon.pug
     include ../styles.pug
@@ -27,6 +27,8 @@ html(lang="en")
                         a(href="http://twopm.itch.io") Games on itch.io
                     li 
                         a(href="http://github.com/bfollington") Code on Github
+                    li 
+                        a(href="presskit") Presskit
                     //- li 
                     //-     a(href="#") Merch on Redbubble (Coming soon...)
         
@@ -37,15 +39,23 @@ html(lang="en")
             
                 div.games
                     
-                    +game("The Thin Silence", "Our biggest project yet", "img/TTS.png", "the-thin-silence")
+                    +game("The Thin Silence (PC)", "The Thin Silence is a narrative adventure game told through introspection and recollection, follow the journey of Ezra from his self-imposed exile to forgiveness and hope.", "img/TTS.png", "the-thin-silence")
                     
                     div.row 
-                        +smallGame("It's Hard To Be A Cube", "A super hard, made-in-one-week game.", "img/IHTBAC.png", "https://twopm.itch.io/its-hard-to-be-a-cube")
-                    
-                        +smallGame("EverEternal WinterWorld 2", "An almost finished sequel to a bizarre Christmas adventure.", "img/EEWW2.png", "https://twopm.itch.io/evereternal-winterworld-2")
+                        +smallGame("It's Hard To Be A Cube (PC)", "A ROM-hack inspired speedrun platformer about a gutsy cube.", "img/IHTBAC.png", "https://twopm.itch.io/its-hard-to-be-a-cube")
+                        +smallGame("Nightmerica (iOS)", "A fight to the death against your own mind.", "img/USN.png", "usn")
+                   
+                    div.row 
+                        +smallGame("Unhain My Heart (iOS)", "A zen puzzle game experience", "img/UnchainMyHeart.png", "umh")
+                        +smallGame("RunRunDie! (iOS)", "An ultra-hard auto-runner where you just need to stop being on fire.", "img/RRD.jpg", "runrundie")
                     
                     div.row 
-                        +smallGame("EverEternal WinterWorld", "A bizarre Christmas adventure.", "img/EEWW.png", "https://twopm.itch.io/evereternal-winterworld")
+                        +smallGame("EverEternal WinterWorld (PC)", "A bizarre Christmas adventure.", "img/EEWW.png", "https://twopm.itch.io/evereternal-winterworld")
+                        +smallGame("EverEternal WinterWorld 2 (PC)", "An almost finished sequel to a bizarre Christmas adventure.", "img/EEWW2.png", "https://twopm.itch.io/evereternal-winterworld-2")
+
+                    div.row
+                        p.more-games
+                            <a title="More games by TwoPM Studios" href="http://twopm.itch.io">and more...</a>
         
         div.row
             div.col-xs-12
