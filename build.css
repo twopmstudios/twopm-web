@@ -368,7 +368,8 @@ body.about .about-copy {
         display: flex;
         flex-direction: row;
 
-        overflow-x: auto; 
+        overflow-x: auto;
+        overflow-y: visible; 
     }
 @media (min-width: 860px) {
 .sotf .images {
