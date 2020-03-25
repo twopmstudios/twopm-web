@@ -355,9 +355,30 @@ body.about .about-copy {
             margin: auto
     }
         }
+.sotf .trailer {
+        width: 100%;
+        height: 320px;
+    }
+@media (min-width: 860px) {
+.sotf .trailer {
+            height: 480px
+    }
+        }
+.sotf .images {
+        display: flex;
+        flex-direction: row;
+
+        overflow-x: auto; 
+    }
+@media (min-width: 860px) {
+.sotf .images {
+            flex-direction: column;
+            overflow: hidden 
+    }
+        }
 .sotf .image-row {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 @media (min-width: 860px) {
 .sotf .image-row {
@@ -487,11 +508,11 @@ body.about .about-copy {
 .sotf .main-image img, .sotf .side-image img {
         width: 100%;
     }
+.sotf .side-image {
+        min-width: 320px;
+    }
 .sotf .side-image img {
         border: 1px solid black;
-    }
-.sotf .images {
-        margin-top: 3em;
     }
 .sotf .main-copy {
         padding: 0 20px;
@@ -499,11 +520,6 @@ body.about .about-copy {
 .sotf .no-padding .col-xs-4 {
             padding: 0;
         }
-.sotf .trailer {
-        width: 960px;
-        margin: 0 auto;
-        margin-top: 3em;
-    }
 .sotf .greenlight-message {
         background: #799905;
         width: 100%;

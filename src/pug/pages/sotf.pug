@@ -41,23 +41,24 @@ html(lang="en")
                 div
                   .tagline
                       span A tactics game like no other
+
+        <iframe class="trailer" src="https://www.youtube.com/embed/JDQNqrpbU64" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
-        div#images.no-padding
+        div.images.no-padding
             .image-row
                 div.side-image
-                      img.clickable(src="img/sotf/3.png" alt="The Song of the Fae") 
-
-
+                    a.no-hover(href="img/sotf/1.png")
+                        img.clickable(src="img/sotf/1.png" alt="The Song of the Fae")
+                div.side-image
+                    a.no-hover(href="img/sotf/2.png")
+                        img.clickable(src="img/sotf/2.png" alt="The Song of the Fae")
             .image-row
                 div.side-image
-                    img.clickable(src="img/sotf/1.png" alt="The Song of the Fae")
+                    a.no-hover(href="img/sotf/4.png")
+                        img.clickable(src="img/sotf/4.png" alt="The Song of the Fae")
                 div.side-image
-                    img.clickable(src="img/sotf/2.png" alt="The Song of the Fae")
-            .image-row
-                div.side-image
-                    img.clickable(src="img/sotf/4.png" alt="The Song of the Fae")
-                div.side-image
-                    img.clickable(src="img/sotf/5.png" alt="The Song of the Fae")
+                    a.no-hover(href="img/sotf/4.png")
+                        img.clickable(src="img/sotf/5.png" alt="The Song of the Fae")
 
         .spacer-3
         div
@@ -116,12 +117,3 @@ html(lang="en")
             .footer-logo
 
         include ../ga.html
-        
-        link(href="scripts/viewerjs/viewer.css" rel="stylesheet")
-        script(src="scripts/viewerjs/viewer.js")
-        
-        script(type="text/javascript").
-            var options = {
-                transition: false
-            };
-            var viewer = new Viewer(document.getElementById('images'), options);
