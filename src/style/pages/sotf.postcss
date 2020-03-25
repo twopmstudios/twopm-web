@@ -1,0 +1,174 @@
+@import "../variables.postcss";
+
+$highlight: #FFAB00;
+$normal: #D0DBDD;
+$normal-dark: #B8C2CE;
+$bg: #20241E;
+
+.sotf {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    color: $normal;
+    background: black;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    .tagline {
+        background: $bg;
+        padding: 5px;
+        border-radius: 3px;
+        display: inline-block;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        color: $highlight;
+    }
+
+    .wrapper {
+        width: 100%;
+
+        @media (min-width: 860px) {
+            max-width: 860px;
+            margin: auto;
+        }
+    }
+
+    .image-row {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 860px) {
+            flex-direction: row;
+        }
+
+        .side-image {
+            flex: 1;
+        }
+    }
+
+    .spacer-1 {
+        margin-bottom: 16px;
+    }
+
+    .spacer-2 {
+        margin-bottom: 32px;
+    }
+
+    .spacer-3 {
+        margin-bottom: 64px;
+    }
+    
+    .callout {
+        background-color: $highlight;
+        padding: 20px;
+        color: black;
+
+        @media (min-width: 860px) {
+            border-radius: 5px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: black;   
+        }
+    }
+
+    .primary-button {
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 2px 0px #000000;
+
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 23px;
+        padding: 8px 15px;
+
+        background-color: $normal;
+        color: black;
+        transform: translate(0, 0);
+
+        transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
+        outline: none;
+
+        &:hover {
+            transform: translate(-1px, -1px);
+            background-color: white;
+            box-shadow: 3px 3px 0px #000000;
+        }
+
+        &:active {
+            transform: translate(0, 0); 
+            box-shadow: 0.5px 0.5px 0px #000000;
+            background-color: $normal-dark;
+        }
+    }
+
+    .header {
+        padding: 2em;
+    }
+
+    .game-header {
+        text-align: center;
+        margin-bottom: 3em;
+    }
+
+    .main-image img, .side-image img {
+        width: 100%;
+    }
+
+    .side-image img {
+        border: 1px solid black;
+    }
+
+    .images {
+        margin-top: 3em;
+    }
+
+    .main-copy {
+        padding: 0 20px;
+    }
+
+    .no-padding {
+        .col-xs-4 {
+            padding: 0;
+        }
+    }
+
+    .trailer {
+        width: 960px;
+        margin: 0 auto;
+        margin-top: 3em;
+    }
+
+    .greenlight-message {
+        background: $greenlight-color;
+        width: 100%;
+        height: 3em;
+        padding: 1em;
+        text-align: center;
+
+        color: white;
+    }
+
+    a.greenlight-link {
+        color: white;
+
+        &:active, &:visited {
+            color: white;
+        }
+
+        &:hover {
+            color: $greenlight-color;
+            background: white;
+        }
+    }
+
+    .checkpoint-image {
+        width: 256px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 2em;
+    }
+}
