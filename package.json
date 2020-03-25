@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "style": "node-sass ./src/scss/root.scss ./build_unprefixed.css && npm run autoprefix",
-    "autoprefix": "cat build_unprefixed.css | postcss --use autoprefixer --no-map > build.css",
-    "style-watch": "node-sass -w ./src/scss/root.scss build.css",
+    "style": "postcss ./src/style/root.postcss -o build.css",
+    "style-watch": "postcss ./src/style/root.postcss --watch -o build.css",
     "pug": "pug --pretty ./src/pug/pages/*.pug -o .",
     "pug-watch": "pug --watch --pretty ./src/pug/pages/*.pug -o .",
     "build": "npm run style && npm run pug",
@@ -26,9 +25,12 @@
   "homepage": "https://github.com/bfollington/twopm-web#readme",
   "devDependencies": {
     "autoprefixer": "^9.4.3",
+    "cssnano": "^4.1.10",
     "imageoptim-cli": "^2.0.4",
-    "node-sass": "^4.11.0",
     "postcss-cli": "^6.0.1",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "postcss-simple-vars": "^5.0.2",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6"
   }
