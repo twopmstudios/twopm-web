@@ -15,6 +15,14 @@ $bg: #20241E;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 
+    a {
+        color: $highlight;
+        &:not(.no-hover):hover, &:not(.no-hover):active, &:not(.no-hover):visited {
+            color: $highlight;
+            background-color: $bg;
+        }
+    }
+
     .tagline {
         background: $bg;
         padding: 5px;
@@ -60,6 +68,11 @@ $bg: #20241E;
     .spacer-3 {
         margin-bottom: 64px;
     }
+
+    .inline-spacer {
+        margin-right: 16px;
+        display: inline-block;
+    }
     
     .callout {
         background-color: $highlight;
@@ -79,6 +92,7 @@ $bg: #20241E;
         border: none;
         border-radius: 5px;
         box-shadow: 2px 2px 0px #000000;
+        text-decoration: none;
 
         font-size: 18px;
         font-weight: bold;
@@ -103,6 +117,57 @@ $bg: #20241E;
             box-shadow: 0.5px 0.5px 0px #000000;
             background-color: $normal-dark;
         }
+    }
+
+    .social-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        .social-row {
+            display: flex;
+            flex-direction: row;
+            padding: 10px 0;
+
+            .title {
+                flex-grow: 0;
+                flex-basis: 128px;
+            }
+
+            .content {
+                flex: 1;
+            }
+        }
+    }
+
+    .text-input {
+        height: 39px;
+        box-sizing: border-box;
+        border: 2px solid $normal;
+        background: transparent;
+        padding: 8px;
+        border-radius: 3px;
+        vertical-align: bottom;
+    }
+
+    .mailing-list {
+        display: flex;
+        flex-direction: column;
+
+        .primary-button  {
+            margin-top: 8px;
+        }
+
+        @media (min-width: 860px) {
+            flex-direction: row;
+            .primary-button {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .mailing-list-disclaimer {
+        font-size: 14px;
     }
 
     .header {

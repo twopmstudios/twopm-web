@@ -16,9 +16,8 @@ html(lang="en")
   
     div.wrapper
         div.header
-            div.top-left-corner-logo
             div
-                a(href="index") &#8592; Take Me Home
+                a(href="index") &#8592; Back to TwoPM Studios
         
         
         div.game-header
@@ -50,8 +49,9 @@ html(lang="en")
                 h4 Playable Demo
                 p Our first prototype build is out now!
                 div
-                  button.primary-button Play on itch.io
-                  button.primary-button Play on Steam
+                  a(href="https://twopm.itch.io/bard-game").primary-button.no-hover Play on itch.io
+                  .inline-spacer
+                  a.primary-button.no-hover Play on Steam
         
         .spacer-2
 
@@ -60,16 +60,43 @@ html(lang="en")
                 h3 The Game
                 p You're a bard with an agenda: forcing others to fight your battles for you. With tactics gameplay inspired by early chess variants and a roulette-roguelite campaign, the core mechanic is to charm other, stronger units with unique abilities to work together to defeat the magical Fae. And if some of them die along the way, well that just makes for a better story...
 
-                h3 Experience The Story
-                ul
-                    li Enjoy 4-5 hours of unique and varied challenges driven by a fresh item-vs-environment interaction mechanic.
-                    li Experience breathtaking vistas &amp; quiet contemplation
-                    li Uncover Ezra’s crisis and his journey back, finding answers and a little bit of yourself along the way
-                    li Featuring a moving original score by LightFrequency
-                    li Over 40 unique in-game documents
-                    li Mostly believable hacking sequences
-                    li A wolf and a deer (not like, at the same time though)
+                h3 Background
 
+                p The Bard, hungry for fame, sets out to add a new verse to their ever growing Saga - a song to bring them renown through the entire Songlands. Rather than waiting for great inspiration to occur, they use their powers of charm to enchant others into brave acts, which they can then witness and sing about. Each session of the game brings a new list of scenarios to create - a knight slain in glorious battle, a wizard saving a friend from certain death, a trusted hound vanquishing a frightening ogre.
+
+                p In practice, this has the bard moving through a series of randomly selected and generated encounters while accumulating a charmed posse around them. Encounters can take many forms, but will primarily be grid-based tactics gameplay with bard and their enamoured followers facing off against various fantastical creatures all under the influence Fae magic.
+
+                h3 The Team
+
+                p <a href="/">TwoPM</a> consists of Ben Follington (<a href="https://twitter.com/vivavolt">@vivavolt</a>) and Ricky James (<a href="https://twitter.com/iammonshushu">@iammonshushu</a>), both based in sunny Queensland, Australia. We've been best friends for about 15 years and have been making games for almost as long. Game design and long-term creative projects have become a central pillar in our lives, despite the fact we do most of our work on nights and weekends.
+
+                p By day Ben is a software engineer & UI designer, while Ricky is a rural doctor. When it comes to games Ben is responsible for all things technical and pixel art while Ricky focuses on project vision, writing and design. As time goes on we plan to continuously improve our processes and our work, hopefully letting us make game development a bigger part of our lives than it already is.
+
+
+                h3 Like What You See?
+
+                p You can follow along with development and share your thoughts, comments and feedback:
+
+                ul.social-list
+                  li.social-row
+                      .title 🐦 twitter
+                      .content
+                        a(href="https://twitter.com/vivavolt") @vivavolt
+                        .inline-spacer
+                        a(href="https://twitter.com/iammonshushu") @iammonshushu
+                  li.social-row
+                      .title 🎮 discord
+                      .content
+                        a(href="https://discord.gg/mt4GdRu") click here to join
+                  li.social-row
+                      .title ✉️ mailing list
+                      .content
+                        include ../mailchimp-sotf.html
+                        .spacer-1
+                        p.mailing-list-disclaimer we solemnly swear not to share your email address with anyone and to only contact you occasionally with development updates about work we’re doing
+
+        .center
+            .footer-logo
 
         include ../ga.html
         
