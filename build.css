@@ -344,6 +344,7 @@ body.about .about-copy {
 .sotf h1, .sotf h2, .sotf h3, .sotf h4, .sotf h5, .sotf h6 {
         font-weight: bold;
         color: #FFAB00;
+        margin-top: 0;
     }
 .sotf .wrapper {
         width: 100%;
@@ -392,6 +393,11 @@ body.about .about-copy {
 .sotf .callout h1, .sotf .callout h2, .sotf .callout h3, .sotf .callout h4, .sotf .callout h5, .sotf .callout h6 {
             color: black;   
         }
+.sotf .meta-panel {
+        padding: 20px;
+        background-color: #20241E;
+        border-radius: 5px;
+    }
 .sotf .primary-button {
         border: none;
         border-radius: 5px;
