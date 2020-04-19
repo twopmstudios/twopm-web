@@ -7,6 +7,7 @@ html(lang="en")
   head
     title Two PM
     
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     include ../favicon.pug
     include ../styles.pug
     include ../ga.html
@@ -15,15 +16,25 @@ html(lang="en")
     
     div.container
         
-        h1 Hey!
+
+        //- h1 Hey!
         
         div.row.header
             div.col-xs-12
-                span.leader <a href="about">Two PM</a> is the name of our studio, where we make things. Mostly those things are games, but other things too. We're <a href="about">two friends</a> from Brisbane, Australia, making things around two pm every weekend.
+                span.leader 
+                    | Welcome to TwoPM Studios.
+                    br
+                    | Thoughtful videogames,
+                    | built patiently. 
+
+
+                //- span.leader <a href="about">Two PM</a> is the name of our studio, where we make things. Mostly those things are games, but other things too. We're <a href="about">two friends</a> from Brisbane, Australia, making things around two pm every weekend.
                 
         div.row
             div.col-xs-12.right-align.links-section
                 ul.horizontal
+                    li 
+                        a(href="about") About Us
                     li 
                         a(href="https://tearoom.twopm.studio") The Tea Room (Our Blog)
                     li 

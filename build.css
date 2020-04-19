@@ -189,11 +189,11 @@
       }
     }
 body.index {
-  background: #0088FF;
+  background: #0047FF;
   color: white;
 }
 body.index .header {
-      margin-top: 3em;
+      margin-top: 1em;
   }
 body.index .links-section {
       margin-top: 2em;
@@ -207,7 +207,7 @@ body.index img.game-image {
 body.index .captions {
       margin-top: 1em;
       width: 100%;
-      text-align: center;
+      text-align: left;
   }
 body.index .captions .game-title {
           font-weight: 400;
@@ -261,6 +261,12 @@ body.about .about-copy {
         padding-left: 3em;
         padding-right: 3em;
     }
+@media only screen and (max-width: 480px) {
+body.about .about-copy {
+            padding-left: 1em;
+            padding-right: 1em
+    }
+        }
 .game {
 
     font-size: 16px;
@@ -647,7 +653,7 @@ a:not(.no-hover):hover {
         background: white;
         -webkit-animation: bounceUp 1000ms linear both;
                 animation: bounceUp 1000ms linear both;
-        color: #0088FF;
+        color: #0047FF;
         text-decoration: none;
 
         padding-left: 5px;
