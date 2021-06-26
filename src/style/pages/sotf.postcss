@@ -5,8 +5,84 @@ $normal: #D0DBDD;
 $normal-dark: #B8C2CE;
 $bg: #20241E;
 
+@font-face {
+  font-family: "Atkinson Hyperlegible Regular";
+  src: url("/fonts/Atkinson-Hyperlegible-Regular-102-1.woff2")
+      format("woff2"),
+    url("/fonts/Atkinson-Hyperlegible-Regular-102.woff")
+      format("woff"),
+    url("/fonts/Atkinson-Hyperlegible-Regular-102.ttf")
+      format("truetype"),
+    url("/fonts/Atkinson-Hyperlegible-Regular-102.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/Atkinson-Hyperlegible-Regular-102.svg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Italic";
+  src: url("/fonts/Atkinson-Hyperlegible-Italic-102-1.woff2")
+      format("woff2"),
+    url("/fonts/Atkinson-Hyperlegible-Italic-102.woff")
+      format("woff"),
+    url("/fonts/Atkinson-Hyperlegible-Italic-102.ttf")
+      format("truetype"),
+    url("/fonts/Atkinson-Hyperlegible-Italic-102.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/Atkinson-Hyperlegible-Italic-102.svg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Bold";
+  src: url("/fonts/Atkinson-Hyperlegible-Bold-102-1.woff2")
+      format("woff2"),
+    url("/fonts/Atkinson-Hyperlegible-Bold-102.woff")
+      format("woff"),
+    url("/fonts/Atkinson-Hyperlegible-Bold-102.ttf")
+      format("truetype"),
+    url("/fonts/Atkinson-Hyperlegible-Bold-102.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/Atkinson-Hyperlegible-Bold-102.svg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible BI";
+  src: url("/fonts/Atkinson-Hyperlegible-BoldItalic-102-1.woff2")
+      format("woff2"),
+    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.woff")
+      format("woff"),
+    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf")
+      format("truetype"),
+    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.eot?#iefix")
+      format("embedded-opentype"),
+    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.svg")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Augusta";
+  src: 
+    url("/fonts/Augusta.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
 .sotf {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Atkinson Hyperlegible Regular', serif;
     font-size: 18px;
     color: $normal;
     background: black;
@@ -25,12 +101,13 @@ $bg: #20241E;
 
     .tagline {
         background: $bg;
-        padding: 5px;
+        padding: 4px 10px;
         border-radius: 3px;
         display: inline-block;
     }
 
     h1, h2, h3, h4, h5, h6 {
+        font-family: 'Augusta', serif;
         font-weight: bold;
         color: $highlight;
         margin-top: 0;
