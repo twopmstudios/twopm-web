@@ -411,7 +411,14 @@ body.about .about-copy {
 .sotf a {
         color: #FFAB00;
     }
-.sotf a:not(.no-hover):hover, .sotf a:not(.no-hover):active, .sotf a:not(.no-hover):visited {
+.sotf a:not(.no-hover):hover, .sotf a:not(.no-hover):active {
+            color: #FFAB00;
+            background-color: #20241E;
+        }
+.sotf a.inverted {
+        color: #20241E;
+    }
+.sotf a.inverted:hover {
             color: #FFAB00;
             background-color: #20241E;
         }

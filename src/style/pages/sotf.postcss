@@ -93,7 +93,15 @@ $bg: #20241E;
 
     a {
         color: $highlight;
-        &:not(.no-hover):hover, &:not(.no-hover):active, &:not(.no-hover):visited {
+        &:not(.no-hover):hover, &:not(.no-hover):active {
+            color: $highlight;
+            background-color: $bg;
+        }
+    }
+
+    a.inverted {
+        color: $bg;
+        &:hover {
             color: $highlight;
             background-color: $bg;
         }
