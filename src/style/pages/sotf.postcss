@@ -6,78 +6,60 @@ $normal-dark: #B8C2CE;
 $bg: #20241E;
 
 @font-face {
-  font-family: "Atkinson Hyperlegible Regular";
-  src: url("/fonts/Atkinson-Hyperlegible-Regular-102-1.woff2")
-      format("woff2"),
-    url("/fonts/Atkinson-Hyperlegible-Regular-102.woff")
-      format("woff"),
-    url("/fonts/Atkinson-Hyperlegible-Regular-102.ttf")
-      format("truetype"),
-    url("/fonts/Atkinson-Hyperlegible-Regular-102.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/Atkinson-Hyperlegible-Regular-102.svg")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "Atkinson Hyperlegible Italic";
-  src: url("/fonts/Atkinson-Hyperlegible-Italic-102-1.woff2")
-      format("woff2"),
-    url("/fonts/Atkinson-Hyperlegible-Italic-102.woff")
-      format("woff"),
-    url("/fonts/Atkinson-Hyperlegible-Italic-102.ttf")
-      format("truetype"),
-    url("/fonts/Atkinson-Hyperlegible-Italic-102.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/Atkinson-Hyperlegible-Italic-102.svg")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "Atkinson Hyperlegible Bold";
-  src: url("/fonts/Atkinson-Hyperlegible-Bold-102-1.woff2")
-      format("woff2"),
-    url("/fonts/Atkinson-Hyperlegible-Bold-102.woff")
-      format("woff"),
-    url("/fonts/Atkinson-Hyperlegible-Bold-102.ttf")
-      format("truetype"),
-    url("/fonts/Atkinson-Hyperlegible-Bold-102.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/Atkinson-Hyperlegible-Bold-102.svg")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "Atkinson Hyperlegible BI";
-  src: url("/fonts/Atkinson-Hyperlegible-BoldItalic-102-1.woff2")
-      format("woff2"),
-    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.woff")
-      format("woff"),
-    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf")
-      format("truetype"),
-    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.svg")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+    font-family: "Atkinson Hyperlegible Regular";
+    src: url("/fonts/Atkinson-Hyperlegible-Regular-102-1.woff2") format("woff2"),
+        url("/fonts/Atkinson-Hyperlegible-Regular-102.woff") format("woff"),
+        url("/fonts/Atkinson-Hyperlegible-Regular-102.ttf") format("truetype"),
+        url("/fonts/Atkinson-Hyperlegible-Regular-102.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Atkinson-Hyperlegible-Regular-102.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 
 @font-face {
-  font-family: "Augusta";
-  src: 
-    url("/fonts/Augusta.ttf")
-      format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+    font-family: "Atkinson Hyperlegible Italic";
+    src: url("/fonts/Atkinson-Hyperlegible-Italic-102-1.woff2") format("woff2"),
+        url("/fonts/Atkinson-Hyperlegible-Italic-102.woff") format("woff"),
+        url("/fonts/Atkinson-Hyperlegible-Italic-102.ttf") format("truetype"),
+        url("/fonts/Atkinson-Hyperlegible-Italic-102.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Atkinson-Hyperlegible-Italic-102.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible Bold";
+    src: url("/fonts/Atkinson-Hyperlegible-Bold-102-1.woff2") format("woff2"),
+        url("/fonts/Atkinson-Hyperlegible-Bold-102.woff") format("woff"),
+        url("/fonts/Atkinson-Hyperlegible-Bold-102.ttf") format("truetype"),
+        url("/fonts/Atkinson-Hyperlegible-Bold-102.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Atkinson-Hyperlegible-Bold-102.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible BI";
+    src: url("/fonts/Atkinson-Hyperlegible-BoldItalic-102-1.woff2") format("woff2"),
+        url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.woff") format("woff"),
+        url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf") format("truetype"),
+        url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Augusta";
+    src:
+        url("/fonts/Augusta.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 
 
@@ -93,7 +75,9 @@ $bg: #20241E;
 
     a {
         color: $highlight;
-        &:not(.no-hover):hover, &:not(.no-hover):active {
+
+        &:not(.no-hover):hover,
+        &:not(.no-hover):active {
             color: $highlight;
             background-color: $bg;
         }
@@ -101,6 +85,7 @@ $bg: #20241E;
 
     a.inverted {
         color: $bg;
+
         &:hover {
             color: $highlight;
             background-color: $bg;
@@ -114,7 +99,12 @@ $bg: #20241E;
         display: inline-block;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: 'Augusta', serif;
         font-weight: bold;
         color: $highlight;
@@ -149,7 +139,7 @@ $bg: #20241E;
         @media (min-width: 860px) {
             flex-direction: column;
             overflow: hidden;
-        } 
+        }
     }
 
     .image-row {
@@ -181,7 +171,7 @@ $bg: #20241E;
         margin-right: 16px;
         display: inline-block;
     }
-    
+
     .callout {
         background-color: $highlight;
         padding: 20px;
@@ -191,8 +181,13 @@ $bg: #20241E;
             border-radius: 5px;
         }
 
-        h1, h2, h3, h4, h5, h6 {
-            color: black;   
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: black;
         }
     }
 
@@ -227,7 +222,7 @@ $bg: #20241E;
         }
 
         &:active {
-            transform: translate(0, 0); 
+            transform: translate(0, 0);
             box-shadow: 0.5px 0.5px 0px #000000;
             background-color: $normal-dark;
         }
@@ -268,12 +263,13 @@ $bg: #20241E;
         display: flex;
         flex-direction: column;
 
-        .primary-button  {
+        .primary-button {
             margin-top: 8px;
         }
 
         @media (min-width: 860px) {
             flex-direction: row;
+
             .primary-button {
                 margin-top: 0;
             }
@@ -293,12 +289,13 @@ $bg: #20241E;
         margin-bottom: 3em;
     }
 
-    .main-image img, .side-image img {
+    .main-image img,
+    .side-image img {
         width: 100%;
     }
 
     .side-image {
-        min-width: 320px;
+        /* min-width: 320px; */
     }
 
     .side-image img {
@@ -328,7 +325,8 @@ $bg: #20241E;
     a.greenlight-link {
         color: white;
 
-        &:active, &:visited {
+        &:active,
+        &:visited {
             color: white;
         }
 

@@ -6,72 +6,72 @@ doctype html
 html(lang="en")
   head
     title Two PM
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     include ../favicon.pug
     include ../styles.pug
     include ../ga.html
-    
+
   body.index
-    
+
     div.container
-        
+
 
         //- h1 Hey!
-        
+
         div.row.header
             div.col-xs-12
-                span.leader 
+                span.leader
                     | Welcome to TwoPM Studios.
                     br
                     | Thoughtful videogames,
-                    | built patiently. 
+                    | built patiently.
 
 
                 //- span.leader <a href="about">Two PM</a> is the name of our studio, where we make things. Mostly those things are games, but other things too. We're <a href="about">two friends</a> from Brisbane, Australia, making things around two pm every weekend.
-                
+
         div.row
             div.col-xs-12.right-align.links-section
                 ul.horizontal
-                    li 
+                    li
                         a(href="about") About Us
-                    li 
-                        a(href="https://twopm.substack.com/") Writing at The Tea Room 
-                    li 
+                    li
+                        a(href="https://twopm.substack.com/") Writing at The Tea Room
+                    li
                         a(href="http://twopm.itch.io") Games on itch.io
-                    li 
+                    li
                         a(href="http://github.com/bfollington") Code on Github
-                    //- li 
+                    //- li
                     //-     a(href="#") Merch on Redbubble (Coming soon...)
-        
+
         div.row
             div.col-xs-12.col-md-6
                 div.large-logo
             div.col-xs-12.col-md-6
-            
+
                 div.games
-                    
-                    +game("WizardChess (PC)", "A deckbuilding roguelike, where Chess meets Trading Card Games.", "img/sotf/3.png", "https://store.steampowered.com/app/1274210/WizardChess/")
-                    
-                    div.row 
+
+                    +game("WizardChess (PC)", "What if chess was invented by silly cosmic wizards? WizardChess is a turnbased roguelite where all the pieces have insane abilities that came to us in a shamanic vision.", "img/WizardChess.png", "wizardchess")
+
+                    div.row
                         +smallGame("The Thin Silence (PC)", "The Thin Silence is a narrative adventure game told through introspection and recollection, follow the journey of Ezra from his self-imposed exile to forgiveness and hope.", "img/TTS.png", "the-thin-silence")
                         +smallGame("It's Hard To Be A Cube (PC)", "A ROM-hack-inspired speedrun-platformer starring a gutsy cube.", "img/IHTBAC.png", "https://twopm.itch.io/its-hard-to-be-a-cube")
-                   
-                    div.row 
+
+                    div.row
                         +smallGame("Nightmerica (iOS)", "A battle to the death, in the arena of your own mind.", "img/USN.png", "usn")
                         +smallGame("Unhain My Heart (iOS)", "A zen puzzle game experience about making chains.", "img/UnchainMyHeart.png", "umh")
-                    
-                    div.row 
+
+                    div.row
                         +smallGame("RunRunDie! (iOS)", "An ultra-hard auto-runner where you need to stop being on fire.", "img/RRD.jpg", "runrundie")
                         +smallGame("EverEternal WinterWorld 2 (PC)", "An almost finished sequel to a bizarre Christmas adventure.", "img/EEWW2.png", "https://twopm.itch.io/evereternal-winterworld-2")
 
-                    div.row 
+                    div.row
                         +smallGame("EverEternal WinterWorld (PC)", "A bizarre Christmas adventure.", "img/EEWW.png", "https://twopm.itch.io/evereternal-winterworld")
 
                     div.row
                         p.more-games
                             <a title="More games by TwoPM Studios" href="http://twopm.itch.io">and more...</a>
-        
+
         div.row
             div.col-xs-12
                 div.contact-options
@@ -81,4 +81,3 @@ html(lang="en")
                     p Or you can tweet us <a href="https://twitter.com/vivavolt">@vivavolt</a> and <a href="https://twitter.com/iammonshushu">@iammonshushu</a>
 
         +footer(true)
-        

@@ -73,14 +73,14 @@
     background-image: url("img/LargeGameLogo.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (-moz-min-device-pixel-ratio: 2),
-      only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      .large-logo {
-        background-image: url("img/LargeGameLogo@2x.png");
-        background-size: 351px 553px;
-      }
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .large-logo {
+            background-image: url("img/LargeGameLogo@2x.png");
+            background-size: 351px 553px;
+        }
     }
 .about-logo {
     width: 225px;
@@ -90,14 +90,14 @@
     background-image: url("img/AboutLogo.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (-moz-min-device-pixel-ratio: 2),
-      only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      .about-logo {
-        background-image: url("img/AboutLogo@2x.png");
-        background-size: 225px 147px;
-      }
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .about-logo {
+            background-image: url("img/AboutLogo@2x.png");
+            background-size: 225px 147px;
+        }
     }
 .tts-logo {
     width: 401px;
@@ -107,32 +107,34 @@
     background-image: url("img/TTSLogo.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (-moz-min-device-pixel-ratio: 2),
-      only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      .tts-logo {
-        background-image: url("img/TTSLogo@2x.png");
-        background-size: 401px 34px;
-      }
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .tts-logo {
+            background-image: url("img/TTSLogo@2x.png");
+            background-size: 401px 34px;
+        }
     }
 .sotf-logo {
-    width: 385px;
-    height: 272px;
+    width: 100%;
+    height: 180px;
     display: inline-block;
     background-size: contain;
 
-    background-image: url("img/SoTFLogo.png");
+    background-image: url("img/WizardChessLogo.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (-moz-min-device-pixel-ratio: 2),
-      only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      .sotf-logo {
-        background-image: url("img/SoTFLogo@2x.png");
-        background-size: 385px 272px;
-      }
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .sotf-logo {
+            background-image: url("img/WizardChessLogo.png");
+            background-size: 460px 92px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
 .top-left-corner-logo {
     width: 113px;
@@ -142,14 +144,14 @@
     background-image: url("img/TopLeftCornerLogo.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (-moz-min-device-pixel-ratio: 2),
-      only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      .top-left-corner-logo {
-        background-image: url("img/TopLeftCornerLogo@2x.png");
-        background-size: 113px 74px;
-      }
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .top-left-corner-logo {
+            background-image: url("img/TopLeftCornerLogo@2x.png");
+            background-size: 113px 74px;
+        }
     }
 .footer-logo {
     margin-top: 4em;
@@ -161,14 +163,14 @@
     background-image: url("img/FooterLogo.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (-moz-min-device-pixel-ratio: 2),
-      only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      .footer-logo {
-        background-image: url("img/FooterLogo@2x.png");
-        background-size: 131px 179px;
-      }
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .footer-logo {
+            background-image: url("img/FooterLogo@2x.png");
+            background-size: 131px 179px;
+        }
     }
 .footer-logo.dark {
     margin-top: 4em;
@@ -180,67 +182,67 @@
     background-image: url("img/FooterLogoDark.png");
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-      only screen and (-moz-min-device-pixel-ratio: 2),
-      only screen and (min-device-pixel-ratio: 2),
-      only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      .footer-logo.dark {
-        background-image: url("img/FooterLogoDark@2x.png");
-        background-size: 95px 179px;
-      }
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        .footer-logo.dark {
+            background-image: url("img/FooterLogoDark@2x.png");
+            background-size: 95px 179px;
+        }
     }
 body.index {
-  background: #0047FF;
-  color: white;
+    background: #0047FF;
+    color: white;
 }
 body.index .header {
-      margin-top: 1em;
-  }
+        margin-top: 1em;
+    }
 body.index .links-section {
-      margin-top: 2em;
-  }
+        margin-top: 2em;
+    }
 body.index .leader {
-      font-size: 2em;
-  }
+        font-size: 2em;
+    }
 body.index img.game-image {
-      width: 100%;
-  }
+        width: 100%;
+        border-radius: 16px;
+        border: 2px solid rgba(255, 255, 255, 0.33);
+    }
 body.index .captions {
-      margin-top: 1em;
-      width: 100%;
-      text-align: left;
-  }
+        margin-top: 1em;
+        width: 100%;
+        text-align: left;
+    }
 body.index .captions .game-title {
-          font-weight: 400;
-          font-size: 1.2em;
-      }
-body.index .captions .game-caption {
-
-      }
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+body.index .captions .game-caption {}
 body.index .game {
-      margin-bottom: 2em;
-  }
+        margin-bottom: 2em;
+    }
 body.index .game.small {
 
-      float: left;
-  }
+        float: left;
+    }
 body.index .game.small img.game-image {
-          width: 100%;
-      }
+            width: 100%;
+        }
 body.index .game.small .captions {
-          width: 100%;
-      }
+            width: 100%;
+        }
 body.index .games {
-      margin-top: 12em;
-  }
+        margin-top: 12em;
+    }
 body.index .more-games {
-      text-align: center;
-  }
+        text-align: center;
+    }
 body.index .contact-options {
-      margin-top: 6em;
-      text-align: center;
-      font-size: 1.4em;
-  }
+        margin-top: 6em;
+        text-align: center;
+        font-size: 1.4em;
+    }
 body.about {
 
     background: white;
@@ -326,77 +328,56 @@ body.about .about-copy {
         margin-top: 2em;
     }
 @font-face {
-  font-family: "Atkinson Hyperlegible Regular";
-  src: url("/fonts/Atkinson-Hyperlegible-Regular-102-1.woff2")
-      format("woff2"),
-    url("/fonts/Atkinson-Hyperlegible-Regular-102.woff")
-      format("woff"),
-    url("/fonts/Atkinson-Hyperlegible-Regular-102.ttf")
-      format("truetype"),
-    url("/fonts/Atkinson-Hyperlegible-Regular-102.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/Atkinson-Hyperlegible-Regular-102.svg")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+    font-family: "Atkinson Hyperlegible Regular";
+    src: url("/fonts/Atkinson-Hyperlegible-Regular-102-1.woff2") format("woff2"),
+        url("/fonts/Atkinson-Hyperlegible-Regular-102.woff") format("woff"),
+        url("/fonts/Atkinson-Hyperlegible-Regular-102.ttf") format("truetype"),
+        url("/fonts/Atkinson-Hyperlegible-Regular-102.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Atkinson-Hyperlegible-Regular-102.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 @font-face {
-  font-family: "Atkinson Hyperlegible Italic";
-  src: url("/fonts/Atkinson-Hyperlegible-Italic-102-1.woff2")
-      format("woff2"),
-    url("/fonts/Atkinson-Hyperlegible-Italic-102.woff")
-      format("woff"),
-    url("/fonts/Atkinson-Hyperlegible-Italic-102.ttf")
-      format("truetype"),
-    url("/fonts/Atkinson-Hyperlegible-Italic-102.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/Atkinson-Hyperlegible-Italic-102.svg")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+    font-family: "Atkinson Hyperlegible Italic";
+    src: url("/fonts/Atkinson-Hyperlegible-Italic-102-1.woff2") format("woff2"),
+        url("/fonts/Atkinson-Hyperlegible-Italic-102.woff") format("woff"),
+        url("/fonts/Atkinson-Hyperlegible-Italic-102.ttf") format("truetype"),
+        url("/fonts/Atkinson-Hyperlegible-Italic-102.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Atkinson-Hyperlegible-Italic-102.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 @font-face {
-  font-family: "Atkinson Hyperlegible Bold";
-  src: url("/fonts/Atkinson-Hyperlegible-Bold-102-1.woff2")
-      format("woff2"),
-    url("/fonts/Atkinson-Hyperlegible-Bold-102.woff")
-      format("woff"),
-    url("/fonts/Atkinson-Hyperlegible-Bold-102.ttf")
-      format("truetype"),
-    url("/fonts/Atkinson-Hyperlegible-Bold-102.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/Atkinson-Hyperlegible-Bold-102.svg")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+    font-family: "Atkinson Hyperlegible Bold";
+    src: url("/fonts/Atkinson-Hyperlegible-Bold-102-1.woff2") format("woff2"),
+        url("/fonts/Atkinson-Hyperlegible-Bold-102.woff") format("woff"),
+        url("/fonts/Atkinson-Hyperlegible-Bold-102.ttf") format("truetype"),
+        url("/fonts/Atkinson-Hyperlegible-Bold-102.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Atkinson-Hyperlegible-Bold-102.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 @font-face {
-  font-family: "Atkinson Hyperlegible BI";
-  src: url("/fonts/Atkinson-Hyperlegible-BoldItalic-102-1.woff2")
-      format("woff2"),
-    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.woff")
-      format("woff"),
-    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf")
-      format("truetype"),
-    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.svg")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+    font-family: "Atkinson Hyperlegible BI";
+    src: url("/fonts/Atkinson-Hyperlegible-BoldItalic-102-1.woff2") format("woff2"),
+        url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.woff") format("woff"),
+        url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf") format("truetype"),
+        url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Atkinson-Hyperlegible-BoldItalic-102.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 @font-face {
-  font-family: "Augusta";
-  src: 
-    url("/fonts/Augusta.ttf")
-      format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+    font-family: "Augusta";
+    src:
+        url("/fonts/Augusta.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 .sotf {
     font-family: 'Atkinson Hyperlegible Regular', serif;
@@ -411,7 +392,8 @@ body.about .about-copy {
 .sotf a {
         color: #FFAB00;
     }
-.sotf a:not(.no-hover):hover, .sotf a:not(.no-hover):active {
+.sotf a:not(.no-hover):hover,
+        .sotf a:not(.no-hover):active {
             color: #FFAB00;
             background-color: #20241E;
         }
@@ -428,7 +410,12 @@ body.about .about-copy {
         border-radius: 3px;
         display: inline-block;
     }
-.sotf h1, .sotf h2, .sotf h3, .sotf h4, .sotf h5, .sotf h6 {
+.sotf h1,
+    .sotf h2,
+    .sotf h3,
+    .sotf h4,
+    .sotf h5,
+    .sotf h6 {
         font-family: 'Augusta', serif;
         font-weight: bold;
         color: #FFAB00;
@@ -457,12 +444,12 @@ body.about .about-copy {
         flex-direction: row;
 
         overflow-x: auto;
-        overflow-y: visible; 
+        overflow-y: visible;
     }
 @media (min-width: 860px) {
 .sotf .images {
             flex-direction: column;
-            overflow: hidden 
+            overflow: hidden
     }
         }
 .sotf .image-row {
@@ -500,8 +487,13 @@ body.about .about-copy {
             border-radius: 5px
     }
         }
-.sotf .callout h1, .sotf .callout h2, .sotf .callout h3, .sotf .callout h4, .sotf .callout h5, .sotf .callout h6 {
-            color: black;   
+.sotf .callout h1,
+        .sotf .callout h2,
+        .sotf .callout h3,
+        .sotf .callout h4,
+        .sotf .callout h5,
+        .sotf .callout h6 {
+            color: black;
         }
 .sotf .meta-panel {
         padding: 20px;
@@ -539,7 +531,7 @@ body.about .about-copy {
         }
 .sotf .primary-button:active {
             -webkit-transform: translate(0, 0);
-                    transform: translate(0, 0); 
+                    transform: translate(0, 0);
             box-shadow: 0.5px 0.5px 0px #000000;
             background-color: #B8C2CE;
         }
@@ -573,13 +565,14 @@ body.about .about-copy {
         display: flex;
         flex-direction: column;
     }
-.sotf .mailing-list .primary-button  {
+.sotf .mailing-list .primary-button {
             margin-top: 8px;
         }
 @media (min-width: 860px) {
 .sotf .mailing-list {
             flex-direction: row
     }
+
             .sotf .mailing-list .primary-button {
                 margin-top: 0;
             }
@@ -594,11 +587,12 @@ body.about .about-copy {
         text-align: center;
         margin-bottom: 3em;
     }
-.sotf .main-image img, .sotf .side-image img {
+.sotf .main-image img,
+    .sotf .side-image img {
         width: 100%;
     }
 .sotf .side-image {
-        min-width: 320px;
+        /* min-width: 320px; */
     }
 .sotf .side-image img {
         border: 1px solid black;
@@ -621,7 +615,8 @@ body.about .about-copy {
 .sotf a.greenlight-link {
         color: white;
     }
-.sotf a.greenlight-link:active, .sotf a.greenlight-link:visited {
+.sotf a.greenlight-link:active,
+        .sotf a.greenlight-link:visited {
             color: white;
         }
 .sotf a.greenlight-link:hover {
